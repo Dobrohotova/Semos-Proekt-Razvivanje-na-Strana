@@ -1,0 +1,53 @@
+* {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 24px;
+}
+
+h1 {
+	font-size: 48px;
+}
+
+h2 {
+	font-size: 18px;
+}
+
+.wrapper-full-width {
+	width: 1920px;
+	height: 5770px;
+	border-top: 8px solid #464646;
+}
+
+	.video {
+		height: 970px;
+		background-color: grey;
+	}
+
+	.graphic-vs-web {
+		height: 800px;
+		background-color: red;
+	}
+
+	.zoshto-semos {
+		height: 1100px;
+		background-color: yellow;
+	}
+
+	.podatoci {
+		height: 165px;
+		background-color: blue;
+	}
+
+	.nastani {
+		height: 735px;
+		background-color: silver;
+	}
+
+	.oop {
+		height: 1380px;
+		background-color: grey;
+	}
+
+	.map {
+		height: 185px;
+		background-color: black;
+	}
