@@ -1,6 +1,10 @@
 * {
+	margin: 0;
+	padding: 0;
 	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
 	font-size: 24px;
+	box-sizing: border-box;
 }
 
 h1 {
@@ -12,20 +16,97 @@ h2 {
 }
 
 .wrapper-full-width {
-	width: 1920px;
+	width: 100%;
 	height: 5770px;
-	border-top: 8px solid #464646;
 }
 
-	.video {
-		height: 970px;
-		background-color: grey;
+	.header {
+		width: 100%;
+		height: 200px;
 	}
 
-	.graphic-vs-web {
-		height: 800px;
-		background-color: red;
+	.video {
+		width: 100%;
+		height: 970px;
+		position: relative;
+		margin: 0 auto;
+		border-top: 8px solid #464646;
+
 	}
+
+		.videoimg {
+			width: 100%;
+			height: 970px;
+			overflow: hidden;
+			-webkit-clip-path: polygon(100% 0, 100% 75%, 50% 100%, 0% 75%, 0 0);
+			clip-path: polygon(100% 0, 100% 75%, 50% 100%, 0% 75%, 0 0);
+			position: absolute;
+			z-index: -1;
+		}
+
+		.video-text {
+			width: 950px;
+			height: 400px;
+			margin: 315px auto;
+		}
+
+			.semos {
+				float: left;
+				width: 950px;
+				text-align: center;
+				font-size: 60px;
+				font-weight: 700;
+				color: #b76478;
+				text-transform: uppercase;
+			}
+			.semos span {
+				font-size: 59px;
+				font-weight: 700;
+				color: #2d95db;
+			}
+
+			.akademija {
+				float: left;
+			}
+
+			.video-text .opis {
+				font-size: 24px;
+				line-height: 44px;
+				text-align: center;
+			}
+			
+			.scroll-down {
+				display: block;
+				margin: 130px auto 0 auto;
+			}
+
+
+	.graphic-vs-web {
+		width: 100%;
+		height: 800px;
+		background-color: white;
+	}
+
+		.left-button {
+			width: 450px; 
+			height: 800px;
+			float: left;
+			background-color: red;
+		}
+
+		.devojka {
+			width: 800px;
+			height: 736px;
+			margin: 65px auto;
+
+		}
+
+		.right-button {
+			width: 450px;
+			height: 800px; 
+			float: right;
+			background-color: black;
+		}
 
 	.zoshto-semos {
 		height: 1100px;
