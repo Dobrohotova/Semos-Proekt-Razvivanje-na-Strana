@@ -48,6 +48,8 @@ h2 {
 			width: 950px;
 			height: 400px;
 			margin: 315px auto;
+			color: white;
+			font-weight: 300;
 		}
 
 			.semos {
@@ -58,6 +60,9 @@ h2 {
 				font-weight: 700;
 				color: #b76478;
 				text-transform: uppercase;
+				border-bottom: 2px solid white;
+				margin-bottom: 30px;
+				padding-bottom: 20px;
 			}
 			.semos span {
 				font-size: 59px;
@@ -69,10 +74,11 @@ h2 {
 				float: left;
 			}
 
-			.video-text .opis {
+			.opis {
 				font-size: 24px;
 				line-height: 44px;
 				text-align: center;
+				margin-top: 10px;
 			}
 			
 			.scroll-down {
@@ -81,54 +87,167 @@ h2 {
 			}
 
 
+
 	.graphic-vs-web {
+		margin: 20px 0 0 0;
 		width: 100%;
 		height: 800px;
-		background-color: white;
+/*		background-color: orange;*/
 	}
 
-		.left-button {
-			width: 450px; 
+		.right-button {
+			width: 28%; 
 			height: 800px;
-			float: left;
-			background-color: red;
+			float: right;
+			background: url(../media/images/pol-back-right.png);
+			background-position: center right;
+			background-repeat: no-repeat;
 		}
+
+			.rightbuttonnn {
+				width: 230px;
+				height: 600px;
+				float: left;
+			}
+
+				.buttongoredesno {
+					width: 279px;
+					height: 305px;
+					background: url(../media/images/buttonright.png);
+					margin-top: 45px;
+					margin-left: -75px;
+					opacity: .7;
+				}
+
+				.buttongoredesno:hover {
+					opacity: 1;
+				}
+
+					.simbolbuttonright {
+						margin-top: 110px;
+						margin-left: 87px;
+					}
+
+				.buttondoledesno {
+					width: 313px;
+					height: 60px;
+					background: url(../media/images/buttonrightdown.png);
+					margin-top: 265px;
+					margin-left: -95px;
+					opacity: .7;
+				}
+
+				.buttondoledesno:hover {
+					opacity: 1;
+				}
+
+					.webbutton {
+						width: 313px;
+						display: block;
+						text-transform: uppercase;
+						text-decoration: none;
+						color: white;
+						font-weight: 600;
+						text-align: center;
+						padding-top: 12px;
+					}
+
+
 
 		.devojka {
-			width: 800px;
+			width: 44%;
 			height: 736px;
-			margin: 65px auto;
-
+			margin: 0 auto;	
+		}
+		.devojka img {
+			width: 100%;
+			margin: 25px 0 0 0;
 		}
 
-		.right-button {
-			width: 450px;
+		.left-button {
+			width: 28%;
 			height: 800px; 
-			float: right;
-			background-color: black;
+			float: left;
+			background: url(../media/images/pol-back-left.png);
+			background-position: center left; 
+			background-repeat: no-repeat;
 		}
+
+			.buttonnn {
+				width: 230px;
+				height: 600px;
+				float: right;
+			}
+
+				.buttongorelevo {
+					width: 279px;
+					height: 305px;
+					background: url(../media/images/buttonleft.png);
+					margin-top: 45px;
+					margin-left: 20px;
+					opacity: .7;
+				}
+
+				.buttongorelevo:hover {
+					opacity: 1;
+				}
+
+					.symbolbuttonleft {
+						margin-top: 100px;
+						margin-left: 87px;
+					}
+
+				.buttondolelevo {
+					width: 313px;
+					height: 60px;
+					background: url(../media/images/buttonleftdown.png);
+					/*background-position: bottom;*/
+					margin-top: 265px;
+					margin-left: 10px;
+					opacity: .7;
+				}
+
+				.buttondolelevo:hover {
+					opacity: 1;
+				}
+
+					.grafichkibutton {
+						width: 313px;
+						display: block;
+						text-transform: uppercase;
+						text-decoration: none;
+						color: white;
+						font-weight: 600;
+						text-align: center;
+						padding-top: 12px;
+					}
 
 	.zoshto-semos {
+		width: 100%;
 		height: 1100px;
 		background-color: yellow;
 	}
 
 	.podatoci {
+		width: 100%;
 		height: 165px;
 		background-color: blue;
 	}
 
 	.nastani {
+		width: 100%;
 		height: 735px;
 		background-color: silver;
 	}
 
 	.oop {
+		width: 100%;
 		height: 1380px;
 		background-color: grey;
 	}
 
 	.map {
+		width: 100%;
 		height: 185px;
 		background-color: black;
 	}
