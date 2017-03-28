@@ -9,10 +9,16 @@
 
 h1 {
 	font-size: 48px;
+	font-weight: 600;
+	text-align: center;
+	color: #464646;
 }
 
 h2 {
 	font-size: 18px;
+	font-weight: 300;
+	text-align: center;
+	color: #464646;
 }
 
 .wrapper-full-width {
@@ -89,165 +95,419 @@ h2 {
 
 
 	.graphic-vs-web {
-		margin: 20px 0 0 0;
 		width: 100%;
 		height: 800px;
-/*		background-color: orange;*/
+		margin: 20px 0 0 0;
+		background: url(../media/images/polygon-background.png);
+/*		background-position: center;*/
+		background-repeat: no-repeat;
 	}
 
-		.right-button {
-			width: 28%; 
+		.main-girl {
+			width: 1400px;
 			height: 800px;
-			float: right;
-			background: url(../media/images/pol-back-right.png);
-			background-position: center right;
-			background-repeat: no-repeat;
+			background: white;
+			margin: 0 auto;
 		}
 
-			.rightbuttonnn {
-				width: 230px;
-				height: 600px;
+			.right-button {
+				width: 325px;
+				height: 800px;
 				float: left;
 			}
 
-				.buttongoredesno {
-					width: 279px;
-					height: 305px;
-					background: url(../media/images/buttonright.png);
-					margin-top: 45px;
-					margin-left: -75px;
-					opacity: .7;
-				}
-
-				.buttongoredesno:hover {
-					opacity: 1;
-				}
-
-					.simbolbuttonright {
-						margin-top: 110px;
-						margin-left: 87px;
-					}
-
-				.buttondoledesno {
-					width: 313px;
-					height: 60px;
-					background: url(../media/images/buttonrightdown.png);
-					margin-top: 265px;
-					margin-left: -95px;
-					opacity: .7;
-				}
-
-				.buttondoledesno:hover {
-					opacity: 1;
-				}
-
-					.webbutton {
-						width: 313px;
-						display: block;
-						text-transform: uppercase;
-						text-decoration: none;
-						color: white;
-						font-weight: 600;
-						text-align: center;
-						padding-top: 12px;
-					}
-
-
-
-		.devojka {
-			width: 44%;
-			height: 736px;
-			margin: 0 auto;	
-		}
-		.devojka img {
-			width: 100%;
-			margin: 25px 0 0 0;
-		}
-
-		.left-button {
-			width: 28%;
-			height: 800px; 
-			float: left;
-			background: url(../media/images/pol-back-left.png);
-			background-position: center left; 
-			background-repeat: no-repeat;
-		}
-
-			.buttonnn {
-				width: 230px;
-				height: 600px;
+			/*.right-button {
+				width: 28%; 
+				height: 800px;
 				float: right;
+				background: url(../media/images/pol-back-right.png);
+				background-position: center right;
+				background-repeat: no-repeat;
+			}*/
+
+				/*.rightbuttonnn {
+					width: 230px;
+					height: 600px;
+					float: left;
+				}*/
+
+					.buttongoredesno {
+						width: 279px;
+						height: 305px;
+						background: url(../media/images/buttonright.png);
+						/*margin-top: 45px;
+						margin-left: -75px;*/
+						opacity: .7;
+					}
+
+					.buttongoredesno:hover {
+						opacity: 1;
+					}
+
+						.simbolbuttonright {
+							margin-top: 110px;
+							margin-left: 87px;
+						}
+
+					.buttondoledesno {
+						width: 313px;
+						height: 60px;
+						background: url(../media/images/buttonrightdown.png);
+						margin-top: 265px;
+						/*margin-left: -95px;*/
+						opacity: .7;
+					}
+
+					.buttondoledesno:hover {
+						opacity: 1;
+					}
+
+						.webbutton {
+							width: 313px;
+							display: block;
+							text-transform: uppercase;
+							text-decoration: none;
+							color: white;
+							font-weight: 600;
+							text-align: center;
+							padding-top: 12px;
+						}
+
+			.middle-devojka {
+				width: 750px;
+				height: 800px;
+				float: left;
+				padding-top: 64px;
 			}
 
-				.buttongorelevo {
-					width: 279px;
-					height: 305px;
-					background: url(../media/images/buttonleft.png);
-					margin-top: 45px;
-					margin-left: 20px;
-					opacity: .7;
+
+			/*.devojka {
+				width: 44%;
+				height: 736px;
+				margin: 0 auto;	
+			}*/
+				.devojka img {
+					width: 100%;
+					margin: 25px 0 0 0;
 				}
 
-				.buttongorelevo:hover {
-					opacity: 1;
-				}
+			.left-button {
+				width: 325px;
+				height: 800px;
+				float: left;
+			}
 
-					.symbolbuttonleft {
-						margin-top: 100px;
-						margin-left: 87px;
+			/*.left-button {
+				width: 28%;
+				height: 800px; 
+				float: left;
+				background: url(../media/images/pol-back-left.png);
+				background-position: center left; 
+				background-repeat: no-repeat;
+			}*/
+
+				/*.buttonnn {
+					width: 230px;
+					height: 600px;
+					float: right;
+				}*/
+
+					.buttongorelevo {
+						width: 279px;
+						height: 305px;
+						background: url(../media/images/buttonleft.png);
+						/*margin-top: 45px;*/
+						margin-left: 35px;
+						opacity: .7;
 					}
 
-				.buttondolelevo {
-					width: 313px;
-					height: 60px;
-					background: url(../media/images/buttonleftdown.png);
-					/*background-position: bottom;*/
-					margin-top: 265px;
-					margin-left: 10px;
-					opacity: .7;
-				}
+					.buttongorelevo:hover {
+						opacity: 1;
+					}
 
-				.buttondolelevo:hover {
-					opacity: 1;
-				}
+						.symbolbuttonleft {
+							margin-top: 100px;
+							margin-left: 87px;
+						}
 
-					.grafichkibutton {
+					.buttondolelevo {
 						width: 313px;
-						display: block;
-						text-transform: uppercase;
-						text-decoration: none;
-						color: white;
-						font-weight: 600;
-						text-align: center;
-						padding-top: 12px;
+						height: 60px;
+						background: url(../media/images/buttonleftdown.png);
+						/*background-position: bottom;*/
+						margin-top: 265px;
+						margin-left: 10px;
+						opacity: .7;
 					}
+
+					.buttondolelevo:hover {
+						opacity: 1;
+					}
+
+						.grafichkibutton {
+							width: 313px;
+							display: block;
+							text-transform: uppercase;
+							text-decoration: none;
+							color: white;
+							font-weight: 600;
+							text-align: center;
+							padding-top: 12px;
+						}
 
 	.zoshto-semos {
 		width: 100%;
 		height: 1100px;
-		background-color: yellow;
+		background-color: #f3f3f3;
+		background: url(../media/images/zoshto-semos-background.png);
 	}
+
+		.zoshto-semos-sodrzhina {
+			width: 1400px;
+			height: 1100px;
+			margin: 0 auto;
+		}
+
+			.zoshto-semos-naslov {
+				width: 100%;
+				height: 335px;
+			}
+
+				.zoshto {
+					padding-top: 110px;
+				}
+
+				.zoshto-lorem {
+					padding-top: 25px;
+				}
+
+			.value-tabla-tabs {
+				width: 100%;
+				height: 763px;
+			}
+
+				.value-tabla-tabs-levo {
+					width: 700px;
+					height: 763px;
+					float: left;
+				}
+
+					.tabla {
+						width: 660px;
+						height: 613px;
+						background-color: #464646;
+						opacity: .7;
+						border: 10px solid #b7b7b7;
+					}
+
+						.tabla img {
+							display: block;
+							margin: 45px auto 0 auto;
+						}
+
+						.tabla-kvalitet {
+							font-size: 36px;
+							font-weight: 600;
+							text-align: center;
+							color: white;
+							margin: 30px auto 45px auto;
+						}
+
+						.tabla-lorem {
+							font-size: 24px;
+							font-weight: 600;
+							text-align: center;
+							color: white;
+							margin: 0 95px 60px 95px;
+						}
+
+				.value-tabla-tabs-desno {
+					width: 700px;
+					height: 763px;
+					float: left;
+
+				}
+
+					.values {
+
+					}
+
+
+						.kvalitet {
+							background-color: #797a7b;
+						}
+
+						.kvalitet p {
+							color: white;
+						}
+
+						.values div {
+							width: 307px;
+							height: 171px;
+							border: 3px solid #464646;
+							float: left;
+							margin-left: 42px;
+							margin-bottom: 48px;
+							padding-left: 40px;
+						}
+
+						.values div > img {
+							margin: 26px auto 10px auto;
+						}
 
 	.podatoci {
 		width: 100%;
-		height: 165px;
-		background-color: blue;
+		height: 265px;
+		background-color: #f0f0f0;
 	}
+
+		.podatoci-sodrzhina {
+			width: 1400px;
+			height: 265px;
+			margin: 0 auto;
+		}
+
+			.podatoci-sodrzhina-divovi {
+				width: 350px;
+				height: 265px;
+				float: left;
+				margin: auto;
+			}
+
+				.podatoci-sodrzhina-divovi img {
+					display: block;
+					float: left;
+					margin-left: 75px;
+					margin-right: 36px;
+					margin-top: 95px;
+				}
+
+
+				.p-brojka-zbor {
+					float: left;
+					margin-top: 80px;
+				}
+
+					.p-brojka {
+						font-size: 48px;
+						font-weight: 600;
+					}
+
+					.p-zbor {
+						font-size: 24px;
+						font-weight: 600;
+					}
+
 
 	.nastani {
 		width: 100%;
-		height: 735px;
-		background-color: silver;
+		height: 730px;
+		background: url(../media/images/nastani-background.png);
 	}
+
+		.nastani-sodrzhina {
+			width: 1400px;
+			height: 730px;
+			margin: 0 auto;
+		}
+
+			.nastani h1 {
+				padding-top: 110px;
+				padding-bottom: 90px;
+			}
+
+				.nastani-cel {
+					width: 1150px;
+					height: 325px;
+					margin: 0 auto;
+					/*position: relative;*/
+					/*background-color: black;*/
+				}
+
+					.nastani-date {
+						width: 318px;
+						height: 318px;
+						-webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+						clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+						border: 8px solid #464646;
+						/*position: absolute;*/
+						/*z-index: -1;*/
+						background-color: white;
+						float: left;
+					}
+
+						.nastani-date p {
+							font-size: 72px;
+							font-weight: 600;
+							text-align: center;
+							margin-top: 95px;
+						}
+
+					.nastani-nastan {
+						width: 810px;
+						height: 320px;
+						-webkit-clip-path: polygon(75% 0%, 95% 50%, 75% 100%, 0% 100%, 20% 50%, 0% 0%);
+						clip-path: polygon(75% 0%, 95% 50%, 75% 100%, 0% 100%, 20% 50%, 0% 0%);
+						background-color: white;
+						float: left;
+					}
+
+
+
+
+
 
 	.oop {
 		width: 100%;
-		height: 1380px;
-		background-color: grey;
+		height: 1385px;
+		-webkit-clip-path: polygon(50% 0%, 100% 0, 100% 70%, 50% 100%, 0% 70%, 0 0);
+		clip-path: polygon(50% 0%, 100% 0, 100% 70%, 50% 100%, 0% 70%, 0 0);
+		background-color: #f2f2f2;
 	}
+
+		.oop-sodrzhina {
+			width: 1400px;
+			height: 1380px;
+			margin: 0 auto;
+
+		}
+
+			.oop-naslovi {
+				width: 100%;
+				height: 335px;
+			}
+
+				.oop-naslov {
+					padding-top: 110px;
+				}
+
+				.oop-naslov-lorem {
+					padding-top: 25px;
+				}
+
+				.oop2 {
+					margin-left: 85px;
+					margin-right: 85px;
+				}
+
+				.oop4 {
+					margin-left: 240px;
+					margin-right: 85px;
+				}
+
+				.oop5 {
+
+				}
+
+
+
+
+
+
+
 
 	.map {
 		width: 100%;
 		height: 185px;
-		background-color: black;
+
 	}
