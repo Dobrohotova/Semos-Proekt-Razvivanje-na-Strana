@@ -417,7 +417,7 @@ h2 {
 			}
 
 				.nastani-cel {
-					width: 1150px;
+					width: 1030px;
 					height: 325px;
 					margin: 0 auto;
 					/*position: relative;*/
@@ -430,7 +430,7 @@ h2 {
 						-webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 						clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 						border: 8px solid #464646;
-						/*position: absolute;*/
+						position: relative;
 						/*z-index: -1;*/
 						background-color: white;
 						float: left;
@@ -450,6 +450,8 @@ h2 {
 						clip-path: polygon(75% 0%, 95% 50%, 75% 100%, 0% 100%, 20% 50%, 0% 0%);
 						background-color: white;
 						float: left;
+						position: absolute;
+						margin-left: 230px;
 					}
 
 
