@@ -260,6 +260,7 @@ h2 {
 		height: 1100px;
 		background-color: #f3f3f3;
 		background: url(../media/images/zoshto-semos-background.png);
+		background-repeat: no-repeat;
 	}
 
 		.zoshto-semos-sodrzhina {
