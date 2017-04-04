@@ -25,48 +25,93 @@ h2 {
 .wrapper-full-width-webdesign {
 	width: 100%;
 	height: 4200px;
+	background-color: #ececec;
+}
+.head-slika {
+	/*height: 748px;*/
 }
 
-	.head-slika {
+	.head-slika img {
+		width: 100%;
 		background-color: #ececec;
 	}
 
 	.nav2 {
 		width: 100%;
-		height: 260px;
+		height: 232px;
 		background-color: #ececec;
 	}
 
 		.nav2-sodrzhina {
 			width: 1400px;
-			height: 260px;
+			height: 232px;
 			margin: 0 auto;
-			background-color: grey;
 		}
 
 			.nav2-sodrzhina div {
 				float: left;
+				margin-top: 25px;
 			}
 
 			.nav2-studenti {
 				margin-right: 177px;			
 			}
 
+				.nav2-studenti p {
+					font-size: 24px;
+					font-weight: 600;
+					text-align: center;
+					color: #252525;
+					line-height: 60px;
+				}
+
 			.nav2-proekti {
 				margin-right: 177px;
 			}
+
+				.nav2-proekti p {
+					font-size: 24px;
+					font-weight: 600;
+					text-align: center;
+					color: #252525;
+					line-height: 60px;
+				}
 
 			.nav2-apliciraj {
 				margin-right: 177px;
 			}
 
+				.nav2-apliciraj p {
+					font-size: 24px;
+					font-weight: 600;
+					text-align: center;
+					color: #252525;
+					line-height: 60px;
+				}
+
 			.nav2-programa {
 				margin-right: 177px;
 			}
 
+				.nav2-programa p {
+					font-size: 24px;
+					font-weight: 600;
+					text-align: center;
+					color: #252525;
+					line-height: 60px;
+				}
+
 			.nav2-faq {
 				/*margin-right: 175px;*/
 			}
+
+				.nav2-faq p {
+					font-size: 24px;
+					font-weight: 600;
+					text-align: center;
+					color: #252525;
+					line-height: 60px;
+				}
 
 				.polygon-nav {
 					position: relative;
@@ -87,10 +132,150 @@ h2 {
 					}
 
 
+	.webdesign-description {
+		width: 100%;
+		height: 1145px;
+		background-color: white;
+		background-image: url(../media/images/shape-triangle.png);
+		background-repeat: no-repeat;
+		background-position: top center;
+	}
 
-					
+		.webdesign-description-content {
+			width: 1400px;
+			height: 1145px;
+			margin: 0 auto;
+		}
 
-			/*.nav2-sodrzhina img {
-				margin-top: 28px;
-				margin-right: 175px;
-			}*/
+			.webdesign-description-content h1 {
+				padding-top: 160px;
+				padding-bottom: 125px;
+			}
+
+			.webdesign-description-content-levo {
+				width: 700px;
+				height: 800px;
+				float: left;
+			}
+				
+				.webdesignslika1 {
+					/*margin: 0 auto;*/
+					display: block;
+				}
+
+
+					.webdesignslika2 {
+						float: left;
+						margin-top: -55px;
+						margin-right: 20px;					
+					}
+
+					.webdesignslika3 {
+						float: left;
+						margin-top: 16px;
+						margin-right: 50px;
+					}
+
+					.webdesignslika4 {
+						float: left;
+						margin-top: 16px;
+						margin-right: 20px;					
+					}
+
+					.webdesignslika5 {
+						float: left;
+						margin-top: -55px;					
+					}
+
+			.webdesign-description-content-desno {
+				width: 700px;
+				height: 800px;
+				float: left;
+			}
+
+				.zoshto-veb {
+					font-size: 24px;
+					font-weight: 600;
+					padding-bottom: 40px;
+				}
+
+				.kluchni-pridobivki {
+					font-size: 24px;
+					font-weight: 600;
+					padding-top: 40px;
+					padding-bottom: 40px;
+				}
+
+				.webdesign-description-content-desno ul {
+					margin-left: 25px;
+				}
+
+				.webdesign-description-lastp {
+					padding-top: 40px;
+				}
+
+	.webdesign-values {
+		width: 100%;
+		height: 265px;
+		background-color: #f0f0f0;
+		background-image: url(../media/images/shape-triangle-white.png);
+		background-repeat: no-repeat;
+		background-position: center bottom;
+	}
+
+		.webdesign-values-sodrzhina {
+			width: 1400px;
+			height: 265px;
+			margin: 0 auto;
+		}
+
+			.webdesign-values-sodrzhina-divovi {
+				width: 350px;
+				height: 265px;
+				float: left;
+				margin: auto;
+			}
+
+				.webdesign-values-sodrzhina-divovi img {
+					display: block;
+					float: left;
+					margin-left: 75px;
+					margin-right: 36px;
+					margin-top: 95px;
+				}
+
+
+				.p-brojka-zbor {
+					float: left;
+					margin-top: 80px;
+				}
+
+					.p-brojka {
+						font-size: 48px;
+						font-weight: 600;
+					}
+
+					.p-zbor {
+						font-size: 24px;
+						font-weight: 600;
+					}
+
+	.webdesign-project {
+		width: 100%;
+		height: 1465px;
+		background-color: white;
+		-webkit-clip-path: polygon(50% 0%, 100% 0, 100% 70%, 50% 100%, 0% 70%, 0 0);
+		clip-path: polygon(50% 0%, 100% 0, 100% 70%, 50% 100%, 0% 70%, 0 0);
+		background-image: url(../media/images/webdesign-proekt-background.png);
+		background-repeat: no-repeat;
+	}
+
+		.webdesign-project-content {
+			width: 1400px;
+			height: 1465px;
+			margin: 0 auto;
+		}	
+
+			.webdesign-project-content h1 {
+				padding-top: 130px;
+			}	
