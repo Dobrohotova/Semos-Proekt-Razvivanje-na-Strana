@@ -99,7 +99,7 @@ h2 {
 		height: 800px;
 		margin: 20px 0 0 0;
 		background: url(../media/images/polygon-background.png);
-		/*background-position: center;*/
+		background-position: center;
 		background-position-y: 25%;
 		background-repeat: no-repeat;
 	}
@@ -261,6 +261,7 @@ h2 {
 		height: 1100px;
 		background-color: #f3f3f3;
 		background: url(../media/images/zoshto-semos-background.png);
+		background-position: center;
 		background-repeat: no-repeat;
 	}
 
@@ -357,6 +358,32 @@ h2 {
 							margin: 26px auto 10px auto;
 						}
 
+							.toggle {
+
+							}
+							.toggle .tabs {				  
+
+							}
+							.toggle .tabs .tab {
+								  /*float: left;*/
+							  cursor: pointer;
+							}
+							.toggle .tabs .tab.active {
+								color: white;
+								
+							}
+
+							.tab.active img {
+								filter: invert(100%);
+							}
+							.toggle .panels .panel {
+
+							  display: none;
+							}
+							.toggle .panels .panel:first-child {
+							  display: block;
+							}
+
 	.podatoci {
 		width: 100%;
 		height: 265px;
@@ -405,6 +432,8 @@ h2 {
 		width: 100%;
 		height: 730px;
 		background: url(../media/images/nastani-background.png);
+		background-repeat: no-repeat;
+		background-position: center;
 	}
 
 		.nastani-sodrzhina {
@@ -550,12 +579,12 @@ h2 {
 					margin-left: 85px;
 					margin-right: 85px;
 				}
-/*
+
 				.oop4 {
 					margin-left: 240px;
 					margin-right: 85px;
 				}
-*/
+
 
 
 
