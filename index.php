@@ -1,21 +1,13 @@
 <?php
+include('general.php');
 
-$config = 'mysql:host=127.0.0.1;dbname=sa_sajt';
-$username = 'root';
-$password = 'root';
-$db = new PDO($config, $username, $password);
+$sql_events = 'select * from events';
+$query_events = $db->query($sql_events);
+$events = $query_events->fetchAll(PDO::FETCH_ASSOC);
 
-$sql = 'select * from events';
-$query = $db->query($sql);
-$events = $query->fetchAll(PDO::FETCH_ASSOC);
-// var_dump($events);
-// echo utf8_decode($events[0]['name']);
-
-$sql2 = 'select * from oop_projects';
-$query2 = $db->query($sql2);
-$oops = $query2->fetchAll(PDO::FETCH_ASSOC);
-var_dump($oops);
-// echo utf8_decode($events[0]['name']);
+$sql_oop_projects = 'select * from oop_projects';
+$query_oop_projects = $db->query($sql_oop_projects);
+$oops = $query_oop_projects->fetchAll(PDO::FETCH_ASSOC);
 
 ?>
 
@@ -186,7 +178,7 @@ var_dump($oops);
 					?>
 					<div style="display: <?= $display ?>">
 						<div class="nastani-date">
-							<p><?=$event['date']?></p>
+							<p><?=date('d.m',strtotime($event['date']))?></p>
 						</div>
 						<div class="nastani-nastan">
 							<div class="nastani-nastan-cel">
