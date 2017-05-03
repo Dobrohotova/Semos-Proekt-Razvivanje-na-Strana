@@ -70,7 +70,7 @@ body{
 	width: 1400px;
 	height: 550px;
 }
-.holder0{
+.holder1{
 	float: left;
 	/*margin: 0 auto;*/
 	width: 400px;
@@ -78,32 +78,32 @@ body{
 	position: relative;
 }
 
-	.data-image {
-		width: 400px;
-		height: 535px;
-		position: absolute;
-		top: 0;
-		opacity: 0;
-		/*text-align: center;*/
-		color: #fff;
-		font-size: 30px;
-		background: rgba(76, 76, 76, .8);
-	}
+.data-image {
+	width: 400px;
+	height: 535px;
+	position: absolute;
+	top: 0;
+	opacity: 0;
+	/*text-align: center;*/
+	color: #fff;
+	font-size: 30px;
+	background: rgba(76, 76, 76, .8);
+}
 
-	.data-image:hover {
-		opacity: 1;
-	}
+.data-image:hover {
+	opacity: 1;
+}
 
-	.hover-div {
+.hover-div {
 
-	}
+}
 
-		.hover-div img {
-			float: left;
-			margin-top: 23px;
-			margin-right: 10px;
-			padding-left: 47px;
-		}
+.hover-div img {
+	float: left;
+	margin-top: 23px;
+	margin-right: 10px;
+	padding-left: 47px;
+}
 
 .grapho{
 	font-size: 20px;
@@ -121,31 +121,66 @@ body{
 
 }
 
-.slika {
+.slika1{
 	width: 400px;
 	height: 535px;
 }
-.holder1{
+.holder2{
 	float: right;
 	/*margin: 0 auto;*/
 	width: 400px;
 	height: 535px;
 }
-
-.holder2{
+.slika2{
+	width: 400px;
+	height: 535px;
+}
+.holder3{
 	margin: 0 auto;
 	width: 400px;
 	height: 535px;
 
 }
-
+.slika3{
+	width: 400px;
+	height: 535px;
+}
 .red2{
 	margin: 50px auto 0 auto;
 	width: 1400px;
 	height: 550px;
 	/*background-color: blue;*/
 }
+.holder4{
+	float: left;
+	/*margin: 0 auto;*/
+	width: 400px;
+	height: 535px;
+}
+.slika4{
+	width: 400px;
+	height: 535px;
+}
+.holder5{
+	float: right;
+	/*margin: 0 auto;*/
+	width: 400px;
+	height: 535px;
+}
+.slika5{
+	width: 400px;
+	height: 535px;
+}
+.holder6{
+	margin: 0 auto;
+	width: 400px;
+	height: 535px;
 
+}
+.slika6{
+	width: 400px;
+	height: 535px;
+}
 .map{
 	/*overflow: hidden;*/
 	height: 900px;

@@ -209,14 +209,18 @@ $oops = $query_oop_projects->fetchAll(PDO::FETCH_ASSOC);
 				</div>
 				<div class="oop-proekti">
 					<?php foreach ($oops as $key => $oop){
-						$class = '';
-						if($key == 1){
-							$class = 'class="oop2"';
-						} else if($key == 3) {
-							$class = 'class="oop4"';
+						if($key < 3){
+							$class = "oop2";
+						} else {
+							$class = "oop4";
 						}
 					 ?>
-						<img <?= $class ?> src="<?=$oop['photo']?>">
+						<img class="<?= $class ?>" src="<?=$oop['photo']?>">
+					<!-- <img src="media/images/oop1.png">
+					<img class="oop2" src="media/images/oop2.png">
+					<img src="media/images/oop3.png">
+					<img class="oop4" src="media/images/oop4.png">
+					<img src="media/images/oop5.png"> -->
 					<?php } ?>
 				</div>
 			</div>
