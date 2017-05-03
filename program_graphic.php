@@ -2,13 +2,9 @@
 
 include('general.php');
 
-$sql_events = 'select * from events';
-$query_events = $db->query($sql_events);
-$events = $query_events->fetchAll(PDO::FETCH_ASSOC);
-
-$sql_oop_projects = 'select * from oop_projects';
-$query_oop_projects = $db->query($sql_oop_projects);
-$oops = $query_oop_projects->fetchAll(PDO::FETCH_ASSOC);
+$sql_classes = 'select * from classes';
+$query_classes = $db->query($sql_classes);
+$classes = $query_classes->fetchAll(PDO::FETCH_ASSOC);
 
 ?>
 
@@ -37,16 +33,28 @@ $oops = $query_oop_projects->fetchAll(PDO::FETCH_ASSOC);
     </div>
       <ul>
         <li>
-          <div>
+          <!-- <div>
             <h3>Основи на Информатичка технологија</h3>
               <div class="addInfo">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse iaculis posuere lorem, venenatis condimentum mi lobortis vel. Morbi vitae ultricies quam, non vestibulum quam.</p>
                 <p>Професор: Мирослав Клампфер</p>
                 <p>Број на часови: 16s</p>
               </div>
-          </div>
+          </div> -->
+          <?php foreach ($classes as $class){ 
+            echo '<li>';
+              echo '<div>';
+                echo '<div class="addInfo">';
+                  echo '<p>'.$class['description'].'</p>';
+                    echo '<p>'.$class['professor_id'].'</p>';
+                      echo '<p>'.$class['number_of_classes'].'</p>';
+                echo '</div>';
+               echo '<h3>'.$class['name'].'</h3>';
+              echo '</div>';
+            echo '</li>';
+           } ?>
         </li>
-        <li>
+        <!-- <li>
           <div>
             <h3>Комуникација со Клиент</h3>
           </div>
@@ -145,7 +153,7 @@ $oops = $query_oop_projects->fetchAll(PDO::FETCH_ASSOC);
           <div>
             <h3>Портфолио</h3>
           </div>
-        </li>
+        </li> -->
       </ul>
       <div class="timelineImageBottom">
       <img src="media/images/icons/mortarboard.png" alt="">

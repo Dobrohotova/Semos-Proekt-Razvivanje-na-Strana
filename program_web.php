@@ -2,13 +2,9 @@
 
 include('general.php');
 
-$sql_events = 'select * from events';
-$query_events = $db->query($sql_events);
-$events = $query_events->fetchAll(PDO::FETCH_ASSOC);
-
-$sql_oop_projects = 'select * from oop_projects';
-$query_oop_projects = $db->query($sql_oop_projects);
-$oops = $query_oop_projects->fetchAll(PDO::FETCH_ASSOC);
+$sql_classes = 'select * from classes';
+$query_classes = $db->query($sql_classes);
+$classes = $query_classes->fetchAll(PDO::FETCH_ASSOC);
 
 ?>
 
@@ -23,7 +19,7 @@ $oops = $query_oop_projects->fetchAll(PDO::FETCH_ASSOC);
 <body>
   <section class="intro">
     <div class="topImage">
-      <img src="media/images/programa_grafika.png" alt="Графички Дизајн">
+      <img src="media/images/programa_web.png" alt="Веб Дизајн">
     </div>
     <div class="container">
       <h1>Програма</h1>
@@ -37,28 +33,40 @@ $oops = $query_oop_projects->fetchAll(PDO::FETCH_ASSOC);
     </div>
       <ul>
         <li>
-          <div>
+          <!-- <div>
             <h3>Основи на Информатичка технологија</h3>
               <div class="addInfo">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse iaculis posuere lorem, venenatis condimentum mi lobortis vel. Morbi vitae ultricies quam, non vestibulum quam.</p>
                 <p>Професор: Мирослав Клампфер</p>
                 <p>Број на часови: 16s</p>
               </div>
-          </div>
+          </div> -->
+          <?php foreach ($classes as $class){ 
+            echo '<li>';
+              echo '<div>';
+                echo '<div class="addInfo">';
+                  echo '<p>'.$class['description'].'</p>';
+                    echo '<p>'.$class['professor_id'].'</p>';
+                      echo '<p>'.$class['number_of_classes'].'</p>';
+                echo '</div>';
+               echo '<h3>'.$class['name'].'</h3>';
+              echo '</div>';
+            echo '</li>';
+           } ?>
         </li>
-        <li>
+        <!-- <li>
           <div>
             <h3>Комуникација со Клиент</h3>
           </div>
         </li>
         <li>
           <div>
-            <h3>Кариера и Претприемништво</h3>
+            <h3>Интернет маркетинг SEO/SEM оптимизација</h3>
           </div>
         </li>
         <li>
           <div>
-            <h3>Основи на Маркетинг</h3>
+            <h3>Кариера и претприемништво</h3>
           </div>
         </li>
         <li>
@@ -68,32 +76,47 @@ $oops = $query_oop_projects->fetchAll(PDO::FETCH_ASSOC);
         </li>
         <li>
           <div>
-            <h3>Десктоп Издаваштво</h3>
-          </div>
-        </li>
-        <li>
-          <div>
             <h3>Векторска Графика</h3>
           </div>
         </li>
         <li>
           <div>
-            <h3>Ликовни естетски принципи</h3>
+            <h3>Клиентски веб технологии - HTML, CSS</h3>
           </div>
         </li>
         <li>
           <div>
-            <h3>Основи на цртање</h3>
+            <h3>Веб мултимедија</h3>
           </div>
         </li>
         <li>
           <div>
-            <h3>Типографија</h3>
+            <h3>UI/UX кориснички принципи</h3>
           </div>
         </li>
         <li>
           <div>
-            <h3>Дизајн Процес</h3>
+            <h3>Веб дизајн процес</h3>
+          </div>
+        </li>
+        <li>
+          <div>
+            <h3>Клиентски веб технологии - JavaScript</h3>
+          </div>
+        </li>
+        <li>
+          <div>
+            <h3>Серверски веб технологии со бази на податоци</h3>
+          </div>
+        </li>
+        <li>
+          <div>
+            <h3>Веб анимација</h3>
+          </div>
+        </li>
+        <li>
+          <div>
+            <h3>Дигитално видео</h3>
           </div>
         </li>
         <li>
@@ -103,49 +126,34 @@ $oops = $query_oop_projects->fetchAll(PDO::FETCH_ASSOC);
         </li>
         <li>
           <div>
-            <h3>Подготовка за печатење</h3>
+            <h3>Управување со веб проекти</h3>
           </div>
         </li>
         <li>
           <div>
-            <h3>Дизајн на веб страна без кодирање</h3>
+            <h3>Дизајн на веб страна</h3>
           </div>
         </li>
         <li>
           <div>
-            <h3>Движечка графика</h3>
+            <h3>Имплементација на веб дизајн</h3>
           </div>
         </li>
         <li>
           <div>
-            <h3>Манипулација на Фотографија</h3>
+            <h3>Развој на динамична веб страна</h3>
           </div>
         </li>
         <li>
           <div>
-            <h3>Форми на графички дизајн</h3>
+            <h3>Серверска околина и веб операции</h3>
           </div>
         </li>
         <li>
           <div>
-            <h3>Корпоративен идентитет</h3>
+            <h3>Портфолио на веб дизајнер</h3>
           </div>
-        </li>
-        <li>
-          <div>
-            <h3>Дигитална илустрација</tme>
-          </div>
-        </li>
-        <li>
-          <div>
-            <h3>Дизајн публикации</h3>
-          </div>
-        </li>
-        <li>
-          <div>
-            <h3>Портфолио</h3>
-          </div>
-        </li>
+        </li> -->
       </ul>
       <div class="timelineImageBottom">
       <img src="media/images/icons/mortarboard.png" alt="">

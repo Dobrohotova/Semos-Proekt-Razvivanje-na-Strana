@@ -1,4 +1,19 @@
-﻿<html>
+﻿<?php
+
+include('general.php');
+
+$sql_events = 'select * from events';
+$query_events = $db->query($sql_events);
+$events = $query_events->fetchAll(PDO::FETCH_ASSOC);
+
+$sql_oop_projects = 'select * from oop_projects';
+$query_oop_projects = $db->query($sql_oop_projects);
+$oops = $query_oop_projects->fetchAll(PDO::FETCH_ASSOC);
+
+?>
+
+<!DOCTYPE html>
+<html>
 <head>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <link rel="stylesheet" type="text/css" href="styles/timeline.css">
