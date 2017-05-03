@@ -13,6 +13,10 @@
 		z-index: 1000000;
 }
 
+	.nav_shape {
+		
+	}
+
 	.logo {
 		width: 100%;
 		height: 135px;
@@ -50,6 +54,12 @@
 				padding: 0 4px;
 				height: 60px;
 			}
+
+				nav ul li img {
+					display: block;
+					margin: auto;
+					/*margin-top: 30px;*/
+				}
 
 				nav ul li:nth-child(5) {
 					margin: 0;
