@@ -1,0 +1,96 @@
+body {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+
+header {
+	width: 100%;
+	height: 100px;
+	background-color: yellow;
+}
+
+.main-container {
+	width: 100%;
+}
+
+.mainimg-container {
+	width: 100%;
+	height: 750px;
+}
+
+.mainimg-holder img {
+		width: 100%;
+}
+
+.profesoritext-container {
+	width: 100%
+}
+
+.profesoritext-holder {
+	max-width: 1400px;
+	margin: 0 auto;
+}
+
+.profesoritext-holder h1 {
+	text-align: center;
+	font-size: 36pt;
+	margin-top: 50px;
+}
+
+.profesoritext-holder p {
+	text-align: justify;
+	font-size: 18pt;
+}
+
+.profesori-container {
+	margin-top: 100px;
+	width: 100%;
+	height: 2550px;
+	background-color: #f1eded;
+	clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 50% 100%, 0% 75%)
+}
+
+.profesori-holder {
+	max-width: 1400px;
+	height: 1950px;
+	background-color: #f1eded;
+	margin: 0 auto;
+}
+
+
+.profrow {
+	max-width: 1400px;
+	height: 490px;
+}
+
+.profesori-holder p {
+	padding-top: 0px;
+	text-align: center;
+	font-size: 14pt;
+}
+
+.profesori-holder h2 {
+	text-align: center;
+	padding-top: 100px;
+}
+
+.p {
+	margin-left: 80px;
+	float: left;
+}
+
+
+.p-box {
+	max-width: 290px;
+	height: 360px;
+	background-color: #dddddd;
+	margin-top: -130px;
+	margin-left: -35px;
+}
+
+
+.map-holder {
+	margin: 0 auto;	
+}

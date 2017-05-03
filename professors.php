@@ -11,9 +11,9 @@ var_dump($professors);
 <html>
 <head>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="styles/teachers.css">
+	<link rel="stylesheet" type="text/css" href="styles/professors.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-	<title>Teachers Page</title>
+	<title>Professors Page</title>
 </head>
 <body>
 <header></header>
@@ -36,126 +36,147 @@ var_dump($professors);
 	</div>
 	<div class="profesori-container">
 		<div class="profesori-holder">
-		<div class="profrow1">
-			<div class="p1">
+ 		<?php
+ 	foreach($professors as $key => $prof) {
+		if($key % 4 == 0) {
+			echo '<div class="profrow">';
+		}
+
+		echo '<div class="p">';
+		echo '<img src="'.$prof['photo'].'">';
+		echo '<div class="p-box">';
+		echo '<h2>'.$prof['first_name'].' '.$prof['last_name'].'</h2>';
+		echo '<p>'.$prof['description'].'</p>';
+		echo "</div>";
+		echo "</div>";
+
+		if($key % 4 == 3) {
+			echo '</div>';
+		} 			
+
+	 } ?>
+
+		
+		<!-- <div class="profrow">
+			<div class="p">
 				<img src="media/images/professors/miro.png">
-				<div class="p1-box">
+				<div class="p-box">
 					<h2>Мирослав Клампфер</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tempus auctor ipsum. Aenean bibendum felis a auctor pulvinar. Curabitur elementum pretium libero quis sodales. Sed et elit ligula.</p>
 				</div>
 				</div>
-			<div class="p2">
+			<div class="p">
 				<img src="media/images/professors/dimitarA.png">
-				<div class="p2-box">
+				<div class="p-box">
 					<h2>Димитар Атанасов</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tempus auctor ipsum. Aenean bibendum felis a auctor pulvinar. Curabitur elementum pretium libero quis sodales. Sed et elit ligula.</p>
 				</div>
 			</div>
-			<div class="p3">
+			<div class="p">
 				<img src="media/images/professors/andreja.png">
-				<div class="p3-box">
+				<div class="p-box">
 					<h2>Андреја Јарчевски</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tempus auctor ipsum. Aenean bibendum felis a auctor pulvinar. Curabitur elementum pretium libero quis sodales. Sed et elit ligula.</p>
 				</div>
 			</div>
-			<div class="p4">
+			<div class="p">
 				<img src="media/images/professors/sensei.png">
-				<div class="p4-box">
+				<div class="p-box">
 					<h2>Бојан Гавровски</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tempus auctor ipsum. Aenean bibendum felis a auctor pulvinar. Curabitur elementum pretium libero quis sodales. Sed et elit ligula.</p>
 				</div>
 			</div>	
 			</div>
-			<div class="profrow2">
-				<div class="p5">
+			<div class="profrow">
+				<div class="p">
 				<img src="media/images/professors/druzhe.png">
-				<div class="p5-box">
+				<div class="p-box">
 					<h2>Александар Пешевски</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tempus auctor ipsum. Aenean bibendum felis a auctor pulvinar. Curabitur elementum pretium libero quis sodales. Sed et elit ligula.</p>
 				</div>
 				</div>
-			<div class="p6">
+			<div class="p">
 				<img src="media/images/professors/elena.png">
-				<div class="p6-box">
+				<div class="p-box">
 					<h2>Елена Ѓорѓиевска</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tempus auctor ipsum. Aenean bibendum felis a auctor pulvinar. Curabitur elementum pretium libero quis sodales. Sed et elit ligula.</p>
 				</div>
 			</div>
-			<div class="p7">
+			<div class="p">
 				<img src="media/images/professors/dimitarJ.png">
-				<div class="p7-box">
+				<div class="p-box">
 					<h2>Димитар Јовевски</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tempus auctor ipsum. Aenean bibendum felis a auctor pulvinar. Curabitur elementum pretium libero quis sodales. Sed et elit ligula.</p>
 				</div>
 			</div>
-			<div class="p8">
+			<div class="p">
 				<img src="media/images/professors/jovica.png">
-				<div class="p8-box">
+				<div class="p-box">
 					<h2>Јовица Јовановски</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tempus auctor ipsum. Aenean bibendum felis a auctor pulvinar. Curabitur elementum pretium libero quis sodales. Sed et elit ligula.</p>
 				</div>
 			</div>
-			<div class="profrow3">
-				<div class="p9">
+			<div class="profrow">
+				<div class="p">
 				<img src="media/images/professors/lence.png">
-				<div class="p9-box">
+				<div class="p-box">
 					<h2>Ленче Николовска</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tempus auctor ipsum. Aenean bibendum felis a auctor pulvinar. Curabitur elementum pretium libero quis sodales. Sed et elit ligula.</p>
 				</div>
 				</div>
-			<div class="p10">
+			<div class="p">
 				<img src="media/images/professors/ivana.png">
-				<div class="p10-box">
+				<div class="p-box">
 					<h2>Ивана Шешиќ</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tempus auctor ipsum. Aenean bibendum felis a auctor pulvinar. Curabitur elementum pretium libero quis sodales. Sed et elit ligula.</p>
 				</div>
 			</div>
-			<div class="p11">
+			<div class="p">
 				<img src="media/images/professors/jovana.png">
-				<div class="p11-box">
+				<div class="p-box">
 					<h2>Јована Тофиловска</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tempus auctor ipsum. Aenean bibendum felis a auctor pulvinar. Curabitur elementum pretium libero quis sodales. Sed et elit ligula.</p>
 				</div>
 			</div>
-			<div class="p12">
+			<div class="p">
 				<img src="media/images/professors/marija.png">
-				<div class="p12-box">
+				<div class="p-box">
 					<h2>Марија Стаматовска</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tempus auctor ipsum. Aenean bibendum felis a auctor pulvinar. Curabitur elementum pretium libero quis sodales. Sed et elit ligula.</p>
 				</div>
 			</div>
 			</div>
-			<div class="profrow4">
-				<div class="p13">
+			<div class="profrow">
+				<div class="p">
 				<img src="media/images/professors/boban.png">
-				<div class="p13-box">
+				<div class="p-box">
 					<h2>Бобан Марек</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tempus auctor ipsum. Aenean bibendum felis a auctor pulvinar. Curabitur elementum pretium libero quis sodales. Sed et elit ligula.</p>
 				</div>
 				</div>
-			<div class="p14">
+			<div class="p">
 				<img src="media/images/professors/ivan.png">
-				<div class="p14-box">
+				<div class="p-box">
 					<h2>Иван Миќиќ</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tempus auctor ipsum. Aenean bibendum felis a auctor pulvinar. Curabitur elementum pretium libero quis sodales. Sed et elit ligula.</p>
 				</div>
 			</div>
-			<div class="p15">
+			<div class="p">
 				<img src="media/images/professors/ivanka.png">
-				<div class="p15-box">
+				<div class="p-box">
 					<h2>Иванка Каленбер</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tempus auctor ipsum. Aenean bibendum felis a auctor pulvinar. Curabitur elementum pretium libero quis sodales. Sed et elit ligula.</p>
 				</div>
 			</div>
-			<div class="p16">
+			<div class="p">
 				<img src="media/images/professors/gorjan.png">
-				<div class="p16-box">
+				<div class="p-box">
 					<h2>Горјан Илиевски</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tempus auctor ipsum. Aenean bibendum felis a auctor pulvinar. Curabitur elementum pretium libero quis sodales. Sed et elit ligula.</p>
 				</div>
 			</div>
 			</div>
-		</div>
+		</div> -->
 	</div>
 </div>
 <div class="map-holder">
