@@ -7,8 +7,10 @@
 	<title>Student Web Portfolio</title>
 </head>
 <body>
-	<header></header>
 <div class="main-container">
+	<div class="header">
+		<?php include('header_all.html'); ?>
+	</div>
 	<div class="main-img">
 		<img src="images/mainphoto.png">
 	</div>

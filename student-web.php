@@ -17,6 +17,9 @@ $students = $query->fetchAll(PDO::FETCH_ASSOC);
 </head>
 <body>
 	<div class="container">
+	<div class="header">
+		<?php include('header_all.html'); ?>
+	</div>
 		<div class="pictxt">
 			<div class= "pic"><img src="media/images/toppicture.png"></div>
 			<div class="text">
