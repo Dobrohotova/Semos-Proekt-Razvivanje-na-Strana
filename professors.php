@@ -1,3 +1,12 @@
+<?php 
+include('general.php');
+
+$sql = 'select * from professors';
+
+$query = $db->query($sql);
+$professors = $query->fetchAll(PDO::FETCH_ASSOC);
+var_dump($professors);
+?>
 <!DOCTYPE html>
 <html>
 <head>
