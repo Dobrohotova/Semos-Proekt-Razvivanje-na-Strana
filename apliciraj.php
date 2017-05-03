@@ -8,10 +8,12 @@
 <body>
 	<div class="container">
 		<div class="header">
-			<?php include('header.html'); ?>
+			<?php include('header_all.html'); ?>
 		</div>
-		<div class= "picholder">
-			<div class= "pic"><img src="media/images/toppic.png"></div>
+		<div class="picholder">
+			<div class="pic">
+				<img src="media/images/toppic.png">
+			</div>
 		</div>
 		<div class="content">
 			<div class="text">

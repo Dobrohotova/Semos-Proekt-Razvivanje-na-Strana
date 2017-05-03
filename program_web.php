@@ -17,6 +17,9 @@ $classes = $query_classes->fetchAll(PDO::FETCH_ASSOC);
 </head>
 
 <body>
+  <div class="header">
+      <?php include('header_all.html'); ?>
+    </div>
   <section class="intro">
     <div class="topImage">
       <img src="media/images/programa_web.png" alt="Веб Дизајн">

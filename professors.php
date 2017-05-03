@@ -5,7 +5,6 @@ $sql = 'select * from professors';
 
 $query = $db->query($sql);
 $professors = $query->fetchAll(PDO::FETCH_ASSOC);
-var_dump($professors);
 ?>
 <!DOCTYPE html>
 <html>
@@ -16,8 +15,10 @@ var_dump($professors);
 	<title>Professors Page</title>
 </head>
 <body>
-<header></header>
 <div class="main-container">
+	<div class="header">
+		<?php include('header_all.html'); ?>
+	</div>
 	<div class="mainimg-container">
 		<div class="mainimg-holder">
 			<img src="media/images/mainteacher.png">

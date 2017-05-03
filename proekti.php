@@ -21,7 +21,7 @@ $projects = $query_projects->fetchAll(PDO::FETCH_ASSOC);
 
 <div class="main-wrapper">
 	<div class="header">
-		<?php include('header.html'); ?>
+		<?php include('header_all.html'); ?>
 	</div>
 		<div class="img-header">		
 			<img src="media/images/slika.png">

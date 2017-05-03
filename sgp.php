@@ -7,8 +7,10 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
 <body>
-	<header></header>
 <div class="main-container">
+	<div class="header">
+		<?php include('header_all.html'); ?>
+	</div>
 	<div class="main-img">
 		<img src="images/mainphoto.png">
 	</div>
