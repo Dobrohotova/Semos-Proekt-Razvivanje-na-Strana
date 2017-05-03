@@ -7,8 +7,10 @@
 	<title>Teachers Page</title>
 </head>
 <body>
-<header></header>
 <div class="main-container">
+	<div class="header">
+			<?php include('header_all.html'); ?>
+		</div>
 	<div class="mainimg-container">
 		<div class="mainimg-holder">
 			<img src="media/images/mainteacher.png">
