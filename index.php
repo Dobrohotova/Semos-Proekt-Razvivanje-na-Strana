@@ -19,14 +19,14 @@ $oops = $query_oop_projects->fetchAll(PDO::FETCH_ASSOC);
 	<meta name="description" content="Irina Dobrohotova">
 	<meta name="keywords" content="Semos Edu, academy, design, web design, graphic design, Angelina, kursevi, edukacija, Семос, едукација, курсеви">
 	<meta name="viewport" content="">
-	<link rel="stylesheet" type="text/css" href="styles/global.css">
+	<link rel="stylesheet" type="text/css" href="styles/index.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
 	<title>Semos Dizajn Akademija</title>
 </head>
 <body>
 	<div class="wrapper-full-width">
 		<div class="header">
-			
+			<?php include('header.html'); ?>
 		</div>
 		<div class="video">
 			<img class="videoimg" src="media/images/videoimg.png">
