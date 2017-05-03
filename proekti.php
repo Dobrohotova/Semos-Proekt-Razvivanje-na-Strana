@@ -5,7 +5,6 @@ include('general.php');
 $sql_projects = 'select * from ind_projects';
 $query_projects = $db->query($sql_projects);
 $projects = $query_projects->fetchAll(PDO::FETCH_ASSOC);
-var_dump($projects);
 
 
 ?>
@@ -21,6 +20,9 @@ var_dump($projects);
 <body>
 
 <div class="main-wrapper">
+	<div class="header">
+		<?php include('header.html'); ?>
+	</div>
 		<div class="img-header">		
 			<img src="media/images/slika.png">
 		</div>

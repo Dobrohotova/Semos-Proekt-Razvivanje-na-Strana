@@ -7,6 +7,9 @@
 </head>
 <body>
 	<div class="container">
+		<div class="header">
+			<?php include('header.html'); ?>
+		</div>
 		<div class= "picholder">
 			<div class= "pic"><img src="media/images/toppic.png"></div>
 		</div>
