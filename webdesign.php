@@ -13,7 +13,7 @@
 <body>
 	<div class="wrapper-full-width-webdesign">
 		<div class="header">
-			<?php include('header.html'); ?>
+			<?php include('header_all.html'); ?>
 		</div>
 		<div class="head-slika">
 			<img src="media/images/webdesign-cover.png">
