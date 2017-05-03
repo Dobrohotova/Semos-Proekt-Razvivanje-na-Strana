@@ -50,6 +50,12 @@
 				height: 60px;
 			}
 
+				nav ul li img {
+					display: block;
+					margin: 8px auto 0 auto;
+					/*margin-top: 30px;*/
+				}
+
 				nav ul li:nth-child(5) {
 					margin: 0;
 				}
