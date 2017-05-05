@@ -307,9 +307,7 @@ $oops = $query_oop_projects->fetchAll(PDO::FETCH_ASSOC);
 		<div class="map">
 			
 		</div>
-		<!-- <div class="footer">
-			<?php include('footer.html'); ?>
-		</div> -->
+		
 	</div>
 </body>
 </html>
