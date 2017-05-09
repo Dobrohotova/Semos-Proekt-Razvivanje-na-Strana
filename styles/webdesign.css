@@ -1,4 +1,4 @@
-* {
+/** {
 	margin: 0;
 	padding: 0;
 	font-family: 'Open Sans', sans-serif;
@@ -19,7 +19,9 @@ h2 {
 	font-weight: 300;
 	text-align: center;
 	color: #464646;
-}
+}*/
+
+
 
 
 .wrapper-full-width-webdesign {
@@ -34,12 +36,13 @@ h2 {
 	}*/
 	
 .head-slika {
-	/*height: 748px;*/
+	height: 748px;
 }
 
 	.head-slika img {
 		width: 100%;
 		background-color: #ececec;
+		border: 0;
 	}
 
 	.nav2 {

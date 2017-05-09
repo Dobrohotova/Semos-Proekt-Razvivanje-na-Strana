@@ -6,7 +6,7 @@
 
 .header-holder {
 		width: 100%;
-		height: 100px;
+		height: 92px;
 		border-bottom: 8px solid #464646;
 		position: fixed;
 		background-color: white;
@@ -31,11 +31,11 @@
 		margin: 0 auto;
 	}
 
-	nav {
+	nav.main-menu {
 		padding-top: 20px;
 	}
 
-		nav ul {
+		nav.main-menu ul.main-navigation {
 			list-style: none;
 			width: 910px;
 			height: 60px;
@@ -43,33 +43,39 @@
 			margin: 0 0 0 180px;
 		}
 
-			nav ul li {
+			nav.main-menu ul.main-navigation li {
 				float: left;
 				margin: 0 35px 0 0;
 				padding: 0 4px;
 				height: 60px;
 			}
 
-				nav ul li img {
+				nav.main-menu ul.main-navigation li img {
 					display: block;
-					margin: 8px auto 0 auto;
+					margin: 1px auto 0 auto;
 					/*margin-top: 30px;*/
 				}
 
-				nav ul li:nth-child(5) {
+				nav.main-menu ul.main-navigation li:nth-child(5) {
 					margin: 0;
 				}
 
-					nav ul li a {
+					nav.main-menu ul.main-navigation li a {
 						display: block;
 						text-decoration: none;
 						font-weight: 600;
 						color: #323432;
 						text-transform: uppercase;
-						font-size: 24px;
+						font-size: 24px !important;
 						padding-top: 13px;
 						height: 47px;
 					}
+					
+
+					nav.main-menu ul.main-navigation li a:hover {
+						opacity: .5;
+					}
+
 
 	.languages {
 		width: 100px;

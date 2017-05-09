@@ -9,28 +9,41 @@
 	<link rel="stylesheet" type="text/css" href="styles/header.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<title>Semos Dizajn Akademija</title>
+
+<script>
+	$(window).on("scroll", function () {
+    if ($(this).scrollTop() > 100) {
+        $('header').addClass('smaller');
+    }
+    else {
+        $('header').removeClass('smaller');
+    }
+});
+</script>
 </head>
 <body>
 	<header>
 		<div class="header-holder">
-			<div class="logo">
-				<div class="logo-holder">
-					<img class="main-logo" src="media/images/logo1.png">
-				</div>
-			</div>
-			<nav>
-				<ul>
-					<li><a href="#">ПОЧЕТНА</a><img src="media/images/nav_shape.png"></li>
-					<li><a href="#">ГРАФИЧКИ ДИЗАЈН</a></li>
-					<li><a href="#">ВЕБ ДИЗАЈН</a></li>
-					<li><a href="#">ПРОФЕСОРИ</a></li>
-					<li><a href="#">ЗА НАС</a></li>
-				</ul>
-				<div class="languages">
-					<select class="jazici">
-  						<option value="mk">МК</option>
-  						<option value="en">EN</option>
-					</select>
+			<div class="header-content">
+				<!-- <div class="logo"> -->
+					<!-- <div class="logo-holder"> -->
+						<img class="main-logo" src="media/images/logo1.png">
+					<!-- </div> -->
+				<!-- </div> -->
+				<nav class="main-menu">
+					<ul class="main-navigation">
+						<li><a href="index.php">ПОЧЕТНА</a><img class="triaglonik" src="media/images/nav_shape.png"></li>
+						<li><a href="graphicdesign.php">ГРАФИЧКИ ДИЗАЈН</a></li>
+						<li><a href="webdesign.php">ВЕБ ДИЗАЈН</a></li>
+						<li><a href="professors.php">ПРОФЕСОРИ</a></li>
+						<li><a href="about.php">ЗА НАС</a></li>
+					</ul>
+					<div class="languages">
+						<select class="jazici">
+	  						<option value="mk">МК</option>
+	  						<option value="en">EN</option>
+						</select>
+					</div>
 				</div>
 				<!-- <div class="searches"></div> -->
 			</nav>
