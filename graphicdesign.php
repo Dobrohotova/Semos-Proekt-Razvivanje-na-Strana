@@ -6,7 +6,7 @@
 	<meta name="description" content="Irina Dobrohotova">
 	<meta name="keywords" content="Semos Edu, academy, design, web design, graphic design, Angelina, kursevi, edukacija, Семос, едукација, курсеви">
 	<meta name="viewport" content="">
-	<link rel="stylesheet" type="text/css" href="styles/webdesign.css">
+	<link rel="stylesheet" type="text/css" href="styles/graphicdesign.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
 	<title>Semos Dizajn Akademija</title>
 </head>
@@ -16,7 +16,7 @@
 			<?php include('header_all.html'); ?>
 		</div>
 		<div class="head-slika">
-			<img src="media/images/webdesign-cover.png">
+			<img src="media/images/graphicdesign-cover.png">
 		</div>
 		<div class="nav2">
 			<div class="nav2-sodrzhina">
@@ -49,7 +49,7 @@
 		</div>
 		<div class="webdesign-description">
 			<div class="webdesign-description-content">
-				<h1>Веб Дизајн</h1>
+				<h1>Графички Дизајн</h1>
 				<div class="webdesign-description-content-levo">
 					<img class="webdesignslika1" src="media/images/webdesign-slika1.png">
 					<img class="webdesignslika2" src="media/images/webdesign-slika2.png">
@@ -58,16 +58,16 @@
 					<img class="webdesignslika5" src="media/images/webdesign-slika5.png">
 				</div>
 				<div class="webdesign-description-content-desno">
-					<h3 class="zoshto-veb">Зошто ВЕБ СПЕЦИЈАЛИСТ?</h3>
-					<p>Интернетот и понатаму ќе се развива се повеќе – така и кариерите на веб дизајнерите. Оваа професија на 21-от век комбинира креативност, технологија и традиционални дизајнерски вештини. Доколку сте креативец кој ги сака компјутерите, вие сте вистински ВЕБ СПЕЦИЈАЛИСТ. Почнете со градење на плодотворна иднина во Колеџот.</p> 
+					<h3 class="zoshto-veb">Зошто ГРАФИЧКИ ДИЗАЈНЕР?</h3>
+					<p>Ако имате силно креативно чувство и уживате во работа со компјутер, тогаш вашата идна професија е ГРАФИЧКИ ДИЗАЈНЕР. Сте избрале интересна и креативна професија која можете самостојно да ја работите во домашна атмосфера или тимски во маркетинг агенции или во дизајнерски студија. Тоа е професија која Ви нуди безгранични можности и Ви ги проширува хоризонтите во развојот на професионалната кариера.</p> 
 					<h3 class="kluchni-pridobivki">Клучни придобивки</h3>
 					<ul>
-						<li>Учење на визуелниот дизајн и како истиот функционира,</li>
-						<li>Креирање на веб содржини и дизајни кои се лесни за употреба (user-friendly),</li>
-						<li>Дизајнирање и развој на интерактивни и функционални решенија со висок квалитет,</li>
-						<li>Работа со клиенти.</li>
+						<li>Креирање на ефективни дизајн пораки и намалување на непродуктивно потрошеното време,</li>
+						<li>Брзо решавање на дизајн проблеми преку јасна и концептуална мисла,</li>
+						<li>Збогатување на визуелниот вокабулар,</li>
+						<li>Усовршување на компјутерски вештини во Adobe апликациите,</li>
+						<li>Зголемување на интелектуалната љубопитност преку интеракција, промена на ставовите и развивање на вештини за комуникација преку слики.</li>
 					</ul>
-					<p class="webdesign-description-lastp">Откако успешно ќе ја совладате програмата, целосно ќе бидете подготвени да работите во областа на мултимедијата.</p>
 				</div>
 			</div>			
 		</div>

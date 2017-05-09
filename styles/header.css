@@ -43,7 +43,7 @@ header.smaller {
 		}
 
 			img.main-logo {
-				margin: 40px auto 0 auto;
+				margin: 30px auto 0 auto;
 				display: block;
 			}
 
@@ -51,6 +51,7 @@ header.smaller {
 		width: 1400px;
 		height: 60px;
 		margin: 0 auto;
+		padding-top: 10px;
 	}
 
 		nav ul {
@@ -140,7 +141,7 @@ header.smaller .header-holder {
 				margin-top: 20px;
 				float: left;
 				width: 101px;
-				height: 55px;
+				height: 57px;
 			}
 
 	header.smaller .header-content {
