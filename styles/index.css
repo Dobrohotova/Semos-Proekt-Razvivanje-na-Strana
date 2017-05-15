@@ -580,7 +580,10 @@ h2 {
 					margin-right: 85px;
 				}
 
-
+			.oop-proekti img:hover {
+				background-color: black;
+				opacity: .7;
+			}
 
 
 

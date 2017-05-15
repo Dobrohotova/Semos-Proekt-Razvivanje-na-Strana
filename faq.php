@@ -6,7 +6,7 @@
 	<body>
 		<div class="main-wrapper">
 			<div class="header">
-				<?php include('header.html'); ?>
+				<?php include('header_all.html'); ?>
 			</div>
 			<div class="image-header">
 				<img src="media/images/faq-veb.png">
