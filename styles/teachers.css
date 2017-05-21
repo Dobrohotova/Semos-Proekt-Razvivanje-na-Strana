@@ -59,22 +59,11 @@ header {
 }
 
 
-.profrow1 {
+.profrow {
 	max-width: 1400px;
 	height: 490px;
 }
-.profrow2 {
-	max-width: 1400px;
-	height: 490px;
-}
-.profrow3 {
-	max-width: 1400px;
-	height: 490px;
-}
-.profrow4 {
-	max-width: 1400px;
-	height: 490px;
-}
+
 
 
 .profesori-holder p {
@@ -88,27 +77,13 @@ header {
 	padding-top: 100px;
 }
 
-.p1 {
+.p {
 	margin-left: 80px;
 	float: left;
 }
 
-.p2 {
-	float: left;
-	margin-left: 80px;
-}
 
-.p3 {
-	float: left;
-	margin-left: 80px;
-}
-
-.p4 {
-	float: left;
-	margin-left: 80px;
-}
-
-.p1-box {
+.p-box {
 	max-width: 290px;
 	height: 360px;
 	background-color: #dddddd;
@@ -116,193 +91,8 @@ header {
 	margin-left: -35px;
 }
 
-.p2-box {
-	max-width: 290px;
-	height: 360px;
-	background-color: #dddddd;
-	margin-top: -130px;
-	margin-left: -35px;
-}
 
-.p3-box {
-	max-width: 290px;
-	height: 360px;
-	background-color: #dddddd;
-	margin-top: -130px;
-	margin-left: -35px;
-}
 
-.p4-box {
-	max-width: 290px;
-	height: 360px;
-	background-color: #dddddd;
-	margin-top: -130px;
-	margin-left: -35px;
-}
-
-.p5 {
-	margin-left: 80px;
-	float: left;
-}
-
-.p6 {
-	float: left;
-	margin-left: 80px;
-}
-
-.p7 {
-	float: left;
-	margin-left: 80px;
-}
-
-.p8 {
-	float: left;
-	margin-left: 80px;
-}
-
-.p5-box {
-	max-width: 290px;
-	height: 360px;
-	background-color: #dddddd;
-	margin-top: -130px;
-	margin-left: -35px;
-}
-
-.p6-box {
-	max-width: 290px;
-	height: 360px;
-	background-color: #dddddd;
-	margin-top: -130px;
-	margin-left: -35px;
-}
-
-.p7-box {
-	max-width: 290px;
-	height: 360px;
-	background-color: #dddddd;
-	margin-top: -130px;
-	margin-left: -35px;
-}
-
-.p8-box {
-	max-width: 290px;
-	height: 360px;
-	background-color: #dddddd;
-	margin-top: -130px;
-	margin-left: -35px;
-}
-
-.p9 {
-	margin-left: 80px;
-	float: left;
-	margin-top: 20px;
-}
-
-.p10 {
-	float: left;
-	margin-left: 80px;
-	margin-top: 20px;
-}
-
-.p11 {
-	float: left;
-	margin-left: 80px;
-	margin-top: 20px;
-}
-
-.p12 {
-	float: left;
-	margin-left: 80px;
-	margin-top: 20px;
-}
-
-.p9-box {
-	max-width: 290px;
-	height: 360px;
-	background-color: #dddddd;
-	margin-top: -130px;
-	margin-left: -35px;
-}
-
-.p10-box {
-	max-width: 290px;
-	height: 360px;
-	background-color: #dddddd;
-	margin-top: -130px;
-	margin-left: -35px;
-}
-
-.p11-box {
-	max-width: 290px;
-	height: 360px;
-	background-color: #dddddd;
-	margin-top: -130px;
-	margin-left: -35px;
-}
-
-.p12-box {
-	max-width: 290px;
-	height: 360px;
-	background-color: #dddddd;
-	margin-top: -130px;
-	margin-left: -35px;
-}
-
-.p13 {
-	margin-left: 80px;
-	float: left;
-	margin-top: 20px;
-}
-
-.p14 {
-	float: left;
-	margin-left: 80px;
-	margin-top: 20px;
-}
-
-.p15 {
-	float: left;
-	margin-left: 80px;
-	margin-top: 20px;
-}
-
-.p16 {
-	float: left;
-	margin-left: 80px;
-	margin-top: 20px;
-}
-
-.p13-box {
-	max-width: 290px;
-	height: 360px;
-	background-color: #dddddd;
-	margin-top: -130px;
-	margin-left: -35px;
-}
-
-.p14-box {
-	max-width: 290px;
-	height: 360px;
-	background-color: #dddddd;
-	margin-top: -130px;
-	margin-left: -35px;
-}
-
-.p15-box {
-	max-width: 290px;
-	height: 360px;
-	background-color: #dddddd;
-	margin-top: -130px;
-	margin-left: -35px;
-}
-
-.p16-box {
-	max-width: 290px;
-	height: 360px;
-	background-color: #dddddd;
-	margin-top: -130px;
-	margin-left: -35px;
-}
 
 .map-holder {
 	margin: 0 auto;	
