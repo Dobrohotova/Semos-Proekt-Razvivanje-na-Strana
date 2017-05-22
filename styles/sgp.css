@@ -95,13 +95,13 @@ body {
 .portfolio-text h1 {
 	text-align: center;
 	font-size: 48pt;
-	padding-top: 150px;
+	margin-top: 100px;
 	color: #464646;
 }
 
 .line1{
 width: 12px;
-height: 320px;
+height: 420px;
 background-color: white;
 margin-top: -280px;
 margin-left: 200px;
@@ -109,7 +109,7 @@ margin-left: 200px;
 
 .line2 {
 	width: 12px;
-	height: 320px;
+	height: 420px;
 	background-color: white;
 	position: absolute;
   	right: 200px;

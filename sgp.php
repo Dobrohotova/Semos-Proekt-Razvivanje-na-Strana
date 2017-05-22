@@ -12,7 +12,7 @@
 		<?php include('header_all.html'); ?>
 	</div>
 	<div class="main-img">
-		<img src="images/mainphoto.png">
+		<img src="media/images/mainphoto.png">
 	</div>
 		<div class="student-holder">
 			<div class="student-name">
@@ -20,7 +20,7 @@
 				</div>
 					<div class="student-photo-holder">
 						<div class="student-photo">
-							<img src="images/student-photo.png">
+							<img src="media/images/student-photo.png">
 						</div>
 					</div>
 				<div class="student-text-holder">
@@ -37,15 +37,14 @@
 				</div>
 			<div class="badges">
 				<div class="photoshop">
-					<img src="images/photoshop.png">
+					<img src="media/images/photoshop.png">
 				</div>
 				<div class="illustrator">
-					<img src="images/illustrator.png">
+					<img src="media/images/illustrator.png">
 				</div>
 			</div>
 		</div>
 	</div>
-	<span class="triangle"></span>
 	<div class="portfolio-holder">
 	<div class="portfolio-content">
 	<div class="portfolio-text">
@@ -57,12 +56,12 @@
 	</div>
 	<div class="p-img1-holder">
 		<div class="p-img-1">
-			<img src="images/project1.png">
+			<img src="media/images/project1.png">
 		</div>
 	</div>
 	<div class="p-img2-holder">
 		<div class="p-img-2">
-			<img src="images/project2.png">
+			<img src="media/images/project2.png">
 		</div>
 	</div>
 	</div>
