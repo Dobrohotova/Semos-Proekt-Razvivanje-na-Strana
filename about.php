@@ -4,9 +4,8 @@
 
 </head>
 <body>
-		<?php echo '<div class="header">' ?>
-			<?php include('header_all.html'); ?>
-		<?php echo '</div>' ?>
+
+		<?php include 'header_all.html'; ?>
 	<div>
 		<img src="media/images/about/head_image.png">
 	</div>
