@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel= "Stylesheet" href="styles/apliciraj.css">
+	<link rel= "Stylesheet" href="styles/apply.css">
 	<meta charset="utf-8">
 	<title>Apliciraj</title>
 </head>
@@ -18,10 +18,11 @@
 				<div class= "paragraf"><p class="textpar">Ве молиме внимателно и прецизно да го пополните формуларот. Кога ќе завршите со вметнување на податоците, притиснете на копчето “Потврди“ кое се наоѓа на дното на страната. По приемот на Вашите информации ќе Ве контактираме и ќе се договориме околу терминот.</p></div>
 			</div>
 			<div class= "content2">
+				<form action="apply.php" method="post">
 				<div class="inputime">
 					<div class>
 						<h1 class="ime">Име</h1>
-						<input type="text" name="ime1">
+						<input type="text" name="ime">
 					</div>
 				</div>
 				<div class="inputime">
@@ -39,10 +40,11 @@
 				<div class="inputime">
 					<div class>
 						<h1 class="prezime">E-mail</h1>
-						<input type="text" name="email">
+						<input type="email" name="email">
 					</div>
 				</div>
-				<div class="kopce"><button class= "potvrdi">Потврди</button></div>
+				<div class="kopce"><button class= "potvrdi" type="submit">Потврди</button></div>
+				</form>
 				<div class="slika">
 					<img src= "media/images/picture.png">
 				</div>

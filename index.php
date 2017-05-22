@@ -19,14 +19,61 @@ $oops = $query_oop_projects->fetchAll(PDO::FETCH_ASSOC);
 	<meta name="description" content="Irina Dobrohotova">
 	<meta name="keywords" content="Semos Edu, academy, design, web design, graphic design, Angelina, kursevi, edukacija, Семос, едукација, курсеви">
 	<meta name="viewport" content="">
-	<link rel="stylesheet" type="text/css" href="styles/global.css">
+	<link rel="stylesheet" type="text/css" href="styles/index.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
 	<title>Semos Dizajn Akademija</title>
+
+	<script>
+		(function() {
+		  $(function() {
+		    var toggle;
+		    return toggle = new Toggle('.toggle');
+		  });
+
+		  this.Toggle = (function() {
+		    Toggle.prototype.el = null;
+
+		    Toggle.prototype.tabs = null;
+
+		    Toggle.prototype.panels = null;
+
+		    function Toggle(toggleClass) {
+		      this.el = $(toggleClass);
+		      this.tabs = this.el.find(".tab");
+		      this.panels = this.el.find(".panel");
+		      this.bind();
+		    }
+
+		    Toggle.prototype.show = function(index) {
+		      var activePanel, activeTab;
+		      this.tabs.removeClass('active');
+		      activeTab = this.tabs.get(index);
+		      $(activeTab).addClass('active');
+		      this.panels.hide();
+		      activePanel = this.panels.get(index);
+		      return $(activePanel).show();
+		    };
+
+		    Toggle.prototype.bind = function() {
+		      var _this = this;
+		      return this.tabs.unbind('click').bind('click', function(e) {
+		        return _this.show($(e.currentTarget).index());
+		      });
+		    };
+
+		    return Toggle;
+
+		  })();
+
+		}).call(this);
+	</script>
 </head>
 <body>
 	<div class="wrapper-full-width">
 		<div class="header">
-			
+			<?php include('header.html'); ?>
 		</div>
 		<div class="video">
 			<img class="videoimg" src="media/images/videoimg.png">
@@ -67,22 +114,26 @@ $oops = $query_oop_projects->fetchAll(PDO::FETCH_ASSOC);
 		<div class="graphic-vs-web">
 			<div class="main-girl">
 				<div class="left-button">
-					<div class="buttongorelevo">
-						<img class="symbolbuttonleft" src="media/images/icons/graphic-design.png">
-					</div>
+					<a href="graphicdesign.php">
+						<div class="buttongorelevo">
+							<img class="symbolbuttonleft" src="media/images/icons/graphic-design.png">
+						</div>
+					</a>
 					<div class="buttondolelevo">
-						<a class="grafichkibutton" href="#">графички дизајн</a>
+						<a class="grafichkibutton" href="graphicdesign.php">графички дизајн</a>
 					</div>
 				</div>
 				<div class="middle-devojka">
 					<img src="media/images/devojka.png">
 				</div>
 				<div class="right-button">
-					<div class="buttongoredesno">
-						<img class="simbolbuttonright" src="media/images/icons/web-design.png">
-					</div>
+					<a href="webdesign.php">
+						<div class="buttongoredesno">
+							<img class="simbolbuttonright" src="media/images/icons/web-design.png">
+						</div>
+					</a>
 					<div class="buttondoledesno">
-						<a class="webbutton" href="#">веб дизајн</a>
+						<a class="webbutton" href="webdesign.php">веб дизајн</a>
 					</div>
 				</div>
 			</div>
@@ -93,37 +144,73 @@ $oops = $query_oop_projects->fetchAll(PDO::FETCH_ASSOC);
 					<h1 class="zoshto">Зошто Семос Академија?</h1>
 					<h2 class="zoshto-lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vehicula ante et enim tincidunt, sit amet convallis lacus egestas. Interdum et malesuada fames ac ante ipsum primis in faucibus.</h2>
 				</div>
-				<div class="value-tabla-tabs">
-					<div class="value-tabla-tabs-levo">
-						<div class="tabla">
-							<img src="media/images/icons/kvalitet.png">
-							<p class="tabla-kvalitet">Квалитет</p>
-							<p class="tabla-lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam leo ipsum, accumsan et pretium porttitor, aliquet non turpis. Nunc rhoncus nisi vel diam eleifend, quis mattis massa consectetur. Pellentesque eget pharetra dolor. Sed gravida dignissim sodales. Nullam vel nunc at magna fringilla pharetra a ac ex. </p>
+				<div class="value-tabla-tabs toggle">
+					<div class="panels">
+						<div class="value-tabla-tabs-levo panel">
+							<div class="tabla">
+								<img src="media/images/icons/kvalitet.png">
+								<p class="tabla-kvalitet">Квалитет</p>
+								<p class="tabla-lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam leo ipsum, accumsan et pretium porttitor, aliquet non turpis. Nunc rhoncus nisi vel diam eleifend, quis mattis massa consectetur. Pellentesque eget pharetra dolor. Sed gravida dignissim sodales. Nullam vel nunc at magna fringilla pharetra a ac ex. </p>
+							</div>
 						</div>
-					</div>
-					<div class="value-tabla-tabs-desno">
+						<div class="value-tabla-tabs-levo panel">
+							<div class="tabla">
+								<img src="media/images/icons/tradicija.png">
+								<p class="tabla-kvalitet">Традиција</p>
+								<p class="tabla-lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam leo ipsum, accumsan et pretium porttitor, aliquet non turpis. Nunc rhoncus nisi vel diam eleifend, quis mattis massa consectetur. Pellentesque eget pharetra dolor. Sed gravida dignissim sodales. Nullam vel nunc at magna fringilla pharetra a ac ex. </p>
+							</div>
+						</div>
+						<div class="value-tabla-tabs-levo panel">
+							<div class="tabla">
+								<img src="media/images/icons/ekspertiza.png">
+								<p class="tabla-kvalitet">Експертиза</p>
+								<p class="tabla-lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam leo ipsum, accumsan et pretium porttitor, aliquet non turpis. Nunc rhoncus nisi vel diam eleifend, quis mattis massa consectetur. Pellentesque eget pharetra dolor. Sed gravida dignissim sodales. Nullam vel nunc at magna fringilla pharetra a ac ex. </p>
+							</div>
+						</div>
+						<div class="value-tabla-tabs-levo panel">
+							<div class="tabla">
+								<img src="media/images/icons/profesionalnost.png">
+								<p class="tabla-kvalitet">Професионалност</p>
+								<p class="tabla-lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam leo ipsum, accumsan et pretium porttitor, aliquet non turpis. Nunc rhoncus nisi vel diam eleifend, quis mattis massa consectetur. Pellentesque eget pharetra dolor. Sed gravida dignissim sodales. Nullam vel nunc at magna fringilla pharetra a ac ex. </p>
+							</div>
+						</div>
+						<div class="value-tabla-tabs-levo panel">
+							<div class="tabla">
+								<img src="media/images/icons/kreativnost.png">
+								<p class="tabla-kvalitet">Креативност</p>
+								<p class="tabla-lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam leo ipsum, accumsan et pretium porttitor, aliquet non turpis. Nunc rhoncus nisi vel diam eleifend, quis mattis massa consectetur. Pellentesque eget pharetra dolor. Sed gravida dignissim sodales. Nullam vel nunc at magna fringilla pharetra a ac ex. </p>
+							</div>
+						</div>
+						<div class="value-tabla-tabs-levo panel">
+							<div class="tabla">
+								<img src="media/images/icons/akreditirani.png">
+								<p class="tabla-kvalitet">Акредитирани</p>
+								<p class="tabla-lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam leo ipsum, accumsan et pretium porttitor, aliquet non turpis. Nunc rhoncus nisi vel diam eleifend, quis mattis massa consectetur. Pellentesque eget pharetra dolor. Sed gravida dignissim sodales. Nullam vel nunc at magna fringilla pharetra a ac ex. </p>
+							</div>
+						</div>
+					<div class="value-tabla-tabs-desno tabs">
 						<div class="values">
-							<div class="kvalitet">
+							<div class="tab active">
 								<img src="media/images/icons/kvalitet.png">
 								<p>Квалитет</p>
 							</div>
-							<div class="tradicija">
+							<div class="tab">
 								<img src="media/images/icons/tradicija.png">
 								<p>Традиција</p>
 							</div>
-							<div class="ekspertiza">
+							<div class="tab">
 								<img src="media/images/icons/ekspertiza.png">
 								<p>Експертиза</p>
 							</div>
-							<div class="profesionalnost">
+							<div class="tab">
 								<img src="media/images/icons/profesionalnost.png">
 								<p>Професионалност</p>
 							</div>
-							<div class="kreativnost">
+							<div class="tab">
 								<img src="media/images/icons/kreativnost.png">
 								<p>Креативност</p>
 							</div>
-							<div class="akreditirani">
+							<div class="tab">
 								<img src="media/images/icons/akreditirani.png">
 								<p>Акредитирани</p>
 							</div>
@@ -209,18 +296,14 @@ $oops = $query_oop_projects->fetchAll(PDO::FETCH_ASSOC);
 				</div>
 				<div class="oop-proekti">
 					<?php foreach ($oops as $key => $oop){
-						if($key < 3){
-							$class = "oop2";
-						} else {
-							$class = "oop4";
+						$class = '';
+						if($key == 1){
+							$class = 'class="oop2"';
+						} else if($key == 3) {
+							$class = 'class="oop4"';
 						}
 					 ?>
-						<img class="<?= $class ?>" src="<?=$oop['photo']?>">
-					<!-- <img src="media/images/oop1.png">
-					<img class="oop2" src="media/images/oop2.png">
-					<img src="media/images/oop3.png">
-					<img class="oop4" src="media/images/oop4.png">
-					<img src="media/images/oop5.png"> -->
+						<img <?= $class ?> src="<?=$oop['photo']?>">
 					<?php } ?>
 				</div>
 			</div>
@@ -228,6 +311,7 @@ $oops = $query_oop_projects->fetchAll(PDO::FETCH_ASSOC);
 		<div class="map">
 			
 		</div>
+		
 	</div>
 </body>
 </html>

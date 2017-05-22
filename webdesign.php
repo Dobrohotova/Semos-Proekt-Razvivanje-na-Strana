@@ -12,6 +12,9 @@
 </head>
 <body>
 	<div class="wrapper-full-width-webdesign">
+		<div class="header">
+			<?php include('header_all.html'); ?>
+		</div>
 		<div class="head-slika">
 			<img src="media/images/webdesign-cover.png">
 		</div>
@@ -62,7 +65,7 @@
 						<li>Учење на визуелниот дизајн и како истиот функционира,</li>
 						<li>Креирање на веб содржини и дизајни кои се лесни за употреба (user-friendly),</li>
 						<li>Дизајнирање и развој на интерактивни и функционални решенија со висок квалитет,</li>
-						<li>абота со клиенти.</li>
+						<li>Работа со клиенти.</li>
 					</ul>
 					<p class="webdesign-description-lastp">Откако успешно ќе ја совладате програмата, целосно ќе бидете подготвени да работите во областа на мултимедијата.</p>
 				</div>

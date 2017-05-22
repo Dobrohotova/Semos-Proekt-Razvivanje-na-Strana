@@ -1,24 +1,24 @@
-<?php
-$config = 'mysql:host=127.0.0.1;dbname=sa_site';
-$username = 'root';
-$password = '';
-$db = new PDO($config, $username, $password);
-$sql = "select * from professors";
+<?php 
+include('general.php');
+
+$sql = 'select * from professors';
+
 $query = $db->query($sql);
 $professors = $query->fetchAll(PDO::FETCH_ASSOC);
-print_r($professors);
 ?>
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="styles/teachers.css">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-	<title>Teachers Page</title>
+	<link rel="stylesheet" type="text/css" href="styles/professors.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+	<title>Professors Page</title>
 </head>
 <body>
-<header></header>
 <div class="main-container">
+	<div class="header">
+		<?php include('header_all.html'); ?>
+	</div>
 	<div class="mainimg-container">
 		<div class="mainimg-holder">
 			<img src="media/images/mainteacher.png">
@@ -35,20 +35,36 @@ print_r($professors);
 			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 		</div>
 	</div>
-
 	<div class="profesori-container">
 		<div class="profesori-holder">
-		<?php foreach($professors as $key => $prof) { ?>
-	<div class="profrow<?php echo floor($key/3) + 1; ?>"></div>
-	<?php } ?>
+ 		<?php
+ 	foreach($professors as $key => $prof) {
+		if($key % 4 == 0) {
+			echo '<div class="profrow">';
+		}
 
+		echo '<div class="p">';
+		echo '<img src="'.$prof['photo'].'">';
+		echo '<div class="p-box">';
+		echo '<h2>'.$prof['first_name'].' '.$prof['last_name'].'</h2>';
+		echo '<p>'.$prof['description'].'</p>';
+		echo "</div>";
+		echo "</div>";
+
+		if($key % 4 == 3) {
+			echo '</div>';
+		} 			
+
+	 } ?>
+
+		
 		<!-- <div class="profrow">
 			<div class="p">
 				<img src="media/images/professors/miro.png">
 				<div class="p-box">
 					<h2>Мирослав Клампфер</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tempus auctor ipsum. Aenean bibendum felis a auctor pulvinar. Curabitur elementum pretium libero quis sodales. Sed et elit ligula.</p>
-				</div>?
+				</div>
 				</div>
 			<div class="p">
 				<img src="media/images/professors/dimitarA.png">
@@ -158,10 +174,10 @@ print_r($professors);
 				<div class="p-box">
 					<h2>Горјан Илиевски</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tempus auctor ipsum. Aenean bibendum felis a auctor pulvinar. Curabitur elementum pretium libero quis sodales. Sed et elit ligula.</p>
-				</div>*/ -->
+				</div>
 			</div>
 			</div>
-		</div>
+		</div> -->
 	</div>
 </div>
 <div class="map-holder">
@@ -171,7 +187,3 @@ print_r($professors);
 </div>
 </body>
 </html>
-
-
-
-
