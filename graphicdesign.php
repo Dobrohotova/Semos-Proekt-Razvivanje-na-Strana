@@ -18,7 +18,9 @@
 		<div class="head-slika">
 			<img src="media/images/graphicdesign-cover.png">
 		</div>
-		<div class="nav2">
+			<?php include('navigacijagraphic.php'); ?>
+
+		<!-- <div class="nav2">
 			<div class="nav2-sodrzhina">
 				<div class="nav2-studenti">
 					<img class="polygon-nav" src="media/images/polygon-nav.png">
@@ -46,7 +48,7 @@
 					<p>FAQ</p>
 				</div>
 			</div>
-		</div>
+		</div> -->
 		<div class="webdesign-description">
 			<div class="webdesign-description-content">
 				<h1>Графички Дизајн</h1>
