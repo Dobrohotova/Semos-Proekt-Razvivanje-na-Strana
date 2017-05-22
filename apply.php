@@ -14,11 +14,11 @@
 		<div class="content">
 			<div class="text">
 				<div class="textholder">
-					<h1 class="apliciraj"></h1>Аплицирај
+					<h1>Аплицирај</h1>
 				</div>
 				<div class= "paragraf"><p class="textpar">Ве молиме внимателно и прецизно да го пополните формуларот. Кога ќе завршите со вметнување на податоците, притиснете на копчето “Потврди“ кое се наоѓа на дното на страната. По приемот на Вашите информации ќе Ве контактираме и ќе се договориме околу терминот.</p></div>
 			</div>
-			<div class= "content2">
+			<div class= "content-two">
 				<form action="apply.php" method="post">
 				<div class="inputs">
 					<div class>
