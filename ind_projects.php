@@ -1,14 +1,28 @@
+<?php 
+
+include('general.php');
+
+$sql_projects = 'select * from ind_projects';
+$query_projects = $db->query($sql_projects);
+$projects = $query_projects->fetchAll(PDO::FETCH_ASSOC);
+
+
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
 	<title>Проекти-Графички</title>
-	<link rel="stylesheet" type="text/css" href="styles/proekti.css">
+	<link rel="stylesheet" type="text/css" href="styles/ind_projects.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,600i,700" rel="stylesheet">
 </head>
 <body>
 
 <div class="main-wrapper">
+	<div class="header">
+		<?php include('header_all.html'); ?>
+	</div>
 		<div class="img-header">		
 			<img src="media/images/slika.png">
 		</div>
@@ -29,10 +43,14 @@
 		</div>	
 		<div class="poly">
 			<div class="sliki">
-				<div class="red1">
-					
-					<div class="holder1">
-						<div class="data-image">
+			<?php foreach($projects as $key => $project) { ?>
+				<?php if($key % 3 == 0) {?>
+					<div class="red<?php echo floor($key / 3) + 1; ?>">
+				<?php } ?>	
+					<div class="holder<?php echo floor($key % 3); ?>">
+						<img src="<?= $project['photo'] ?>" class="slika">
+					</div> 
+<!-- 						<div class="data-image">
 							<div class="hover-div">
 								<img src="media/images/icon-hover.png">
 								<p class="grapho">Graphics, Photography</p>
@@ -44,32 +62,37 @@
 							<p class="samshing">Clients: Smashing Magazine</br>
 								Date: November 15, 2014</br>
 								Skills: Photoshop</p>
-						</div>
-						<img src="media/images/grafichki3.png" class="slika1">
+						</div> -->
+
+
+
+<!-- 						<img src="media/images/grafichki3.png" class="slika">
 					</div>
 					
 					<div class="holder2">
-						<img src="media/images/grafichki7.png" class="slika2">
+						<img src="media/images/grafichki7.png" class="slika">
 					</div>
 					
 					<div class="holder3">
-						<img src="media/images/grafichki6.png" class="slika3">
+						<img src="media/images/grafichki6.png" class="slika">
+					</div> -->
+				<?php if($key % 3 == 2) {?>
 					</div>
-				</div>
+				<?php } ?>	
+			<?php } ?>
 				
-				<div class="red2">
+<!-- 				<div class="red2">
 
 					<div class="holder4">
-						<img src="media/images/grafichki8.png" class="slika4">
+						<img src="media/images/grafichki8.png" class="slika">
 					</div>
 					<div class="holder5">
-						<img src="media/images/grafichki9.png" class="slika5">
+						<img src="media/images/grafichki9.png" class="slika">
 					</div>
 					<div class="holder6">
-						<img src="media/images/grafichki5.png" class="slika6">
-					</div>
-				
-				<div>
+						<img src="media/images/grafichki5.png" class="slika">
+					</div> -->
+<!-- 				<div> -->
 			</div>
 		</div>
 	</div>

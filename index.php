@@ -114,26 +114,26 @@ $oops = $query_oop_projects->fetchAll(PDO::FETCH_ASSOC);
 		<div class="graphic-vs-web">
 			<div class="main-girl">
 				<div class="left-button">
-					<a href="graphicdesign.php">
+					<a href="home_graphic.php">
 						<div class="buttongorelevo">
 							<img class="symbolbuttonleft" src="media/images/icons/graphic-design.png">
 						</div>
 					</a>
 					<div class="buttondolelevo">
-						<a class="grafichkibutton" href="graphicdesign.php">графички дизајн</a>
+						<a class="grafichkibutton" href="home_graphic.php">графички дизајн</a>
 					</div>
 				</div>
 				<div class="middle-devojka">
 					<img src="media/images/devojka.png">
 				</div>
 				<div class="right-button">
-					<a href="webdesign.php">
+					<a href="home_web.php">
 						<div class="buttongoredesno">
 							<img class="simbolbuttonright" src="media/images/icons/web-design.png">
 						</div>
 					</a>
 					<div class="buttondoledesno">
-						<a class="webbutton" href="webdesign.php">веб дизајн</a>
+						<a class="webbutton" href="home_web.php">веб дизајн</a>
 					</div>
 				</div>
 			</div>

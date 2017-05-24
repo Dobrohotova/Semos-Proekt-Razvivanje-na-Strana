@@ -11,7 +11,7 @@ $students = $query->fetchAll(PDO::FETCH_ASSOC);
 <html>
 <head>
 	<meta charset="utf-8">
-	<link rel="STYLESHEET" href="styles/student-web.css">
+	<link rel="STYLESHEET" href="styles/student_web.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<title>Student Web</title>
 </head>

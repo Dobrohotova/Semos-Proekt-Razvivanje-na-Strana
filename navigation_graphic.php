@@ -6,7 +6,7 @@
 	<meta name="description" content="Irina Dobrohotova">
 	<meta name="keywords" content="Semos Edu, academy, design, web design, graphic design, Angelina, kursevi, edukacija, Семос, едукација, курсеви">
 	<meta name="viewport" content="">
-	<link rel="stylesheet" type="text/css" href="styles/navigacijagraphic.css">
+	<link rel="stylesheet" type="text/css" href="styles/navigation_graphic.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
 	<title>Semos Dizajn Akademija</title>
 </head>
@@ -21,7 +21,7 @@
 					</a>
 				</div>
 				<div class="nav2-proekti">
-					<a href="proekti.php">
+					<a href="ind_projects.php">
 						<img class="polygon-nav" src="media/images/polygon-nav.png">
 						<img class="icons-nav icon-proekti" src="media/images/icons/proekti-webdesign.png">
 						<p>Проекти</p>
