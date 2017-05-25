@@ -1,6 +1,6 @@
 <?php
 include('general.php');
-$sql = 'select * from students where academy="Веб Дизајн"';
+$sql = 'select * from students where academy="Графички Дизајн"';
 
 $query = $db->query($sql);
 $students = $query->fetchAll(PDO::FETCH_ASSOC);
