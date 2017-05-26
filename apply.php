@@ -11,6 +11,7 @@
 		<div class= "picholder">
 			<div class= "pic"><img src="media/images/toppic.png" width="100%"></div>
 		</div>
+		<?php include('navigation_graphic.php'); ?>
 		<div class="content">
 			<div class="text">
 				<div class="textholder">
