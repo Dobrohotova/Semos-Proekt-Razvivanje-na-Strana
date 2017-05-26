@@ -20,7 +20,7 @@
 				<div class= "paragraf"><p class="textpar">Ве молиме внимателно и прецизно да го пополните формуларот. Кога ќе завршите со вметнување на податоците, притиснете на копчето “Потврди“ кое се наоѓа на дното на страната. По приемот на Вашите информации ќе Ве контактираме и ќе се договориме околу терминот.</p></div>
 			</div>
 			<div class= "content-two">
-				<form action="apply.php" method="post">
+				<form action="apply.php?academy=<?=$_GET['academy']?>&afterclick=true" method="post">
 				<div class="inputs">
 					<div class>
 						<p class="inputfields">Име</p>
@@ -60,3 +60,29 @@
 	</div>
 </body>
 </html>
+
+<?php
+	include 'general.php';
+	
+	if (isset($_POST['ime']) && isset($_POST['prezime']) && isset($_POST['telefon']) && isset($_POST['email'])) {
+		$ime = trim(strip_tags($_POST['ime']));
+		$prezime = trim(strip_tags($_POST['prezime']));
+		$telefon = trim(strip_tags($_POST['telefon']));
+		$email = trim(strip_tags($_POST['email']));
+		$valemail = filter_var($email, FILTER_VALIDATE_EMAIL);
+	}
+
+	if (strlen($ime) > 0 && strlen($prezime) > 0 && strlen($telefon) > 0 && strlen($email) > 0 && $valemail == true) {
+		$sql = "INSERT INTO applicants (first_name, last_name, phone_number, email, academy, aplication_date) VALUES (:first_name, :last_name, :phone_number, :email, :academy, :aplication_date)";
+		$query = $db->prepare($sql);
+		$query->bindValue(':first_name', $ime);
+		$query->bindValue(':last_name', $prezime);
+		$query->bindValue(':phone_number', $telefon);
+		$query->bindValue(':email', $email);
+		$query->bindValue(':academy', $_GET['academy']);
+		$query->bindValue(':aplication_date', date("Y-m-d h:i:sa"));
+		$query->execute();
+	}
+
+
+	?>

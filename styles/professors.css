@@ -75,6 +75,9 @@ body {
 	float: left;
 }
 
+.p-box h2 {
+	margin-top: 5px;
+}
 
 .p-box {
 	max-width: 290px;
