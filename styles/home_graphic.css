@@ -218,7 +218,7 @@ h2 {
 		width: 100%;
 		height: 265px;
 		background-color: #f0f0f0;
-		background-image: url(../media/images/shape-triangle-white.png);
+		background-image: url(../media/images/shape-triangle-grey.png);
 		background-repeat: no-repeat;
 		background-position: center bottom;
 	}
@@ -266,9 +266,7 @@ h2 {
 		background-color: white;
 		-webkit-clip-path: polygon(100% 0, 100% 75%, 50% 100%, 0% 75%, 0 0);
 		clip-path: polygon(100% 0, 100% 75%, 50% 100%, 0% 75%, 0 0);
-		background-image: url(../media/images/webdesign-proekt-background.png);
-		background-repeat: no-repeat;
-		background-position: center;
+		background-color: #e2e1e1;
 	}
 
 		.webdesign-project-content {
@@ -277,6 +275,58 @@ h2 {
 			margin: 0 auto;
 		}	
 
+			.pozadina1 {
+				width: 12px;
+				height: 350px;
+				margin-left: 350px;
+				background-color: white;
+				position: absolute;
+			}
+
+			.pozadina2 {
+				width: 12px;
+				height: 350px;
+				margin-left: 1020px;
+				background-color: white;
+				position: absolute;
+			}
+
 			.webdesign-project-content h1 {
 				padding-top: 130px;
+				position: relative;
 			}	
+
+			.poster {
+				box-sizing: border-box;
+				width: 606px;
+				height: 798px;
+				background-color: white;
+				float: left;
+				margin-left: 65px;
+				margin-top: 150px;
+				padding: 15px;
+			}
+
+				.poster img {
+					width: 577px;
+					height: 772px;
+				}
+
+			.button {
+				width: 237px;
+				height: 55px;
+				margin-left: 580px;
+				margin-top: 1050px;
+				background: url(../media/images/button.png);
+				background-repeat: no-repeat;
+			}
+
+				.button > a {
+					color: white;
+					text-align: center;
+					font-size: 24px;
+					font-weight: 600;
+					text-decoration: none;
+					display: block;
+					padding-top: 7px;
+				}

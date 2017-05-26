@@ -107,7 +107,20 @@
 		</div>
 		<div class="webdesign-project">
 			<div class="webdesign-project-content">
-				<h1>Проект изработен на академијата</h1>
+				<div class="pozadina1"></div>
+				<div class="pozadina2"></div>
+				<h1>Проекти изработени на академијата</h1>
+				<div class="posters-holder">
+					<div class="poster">
+						<img src="media/images/ind_projects/grafichki1.jpg">
+					</div>
+					<div class="poster">
+						<img src="media/images/ind_projects/grafichki2.jpg">
+					</div>					
+				</div>
+				<div class="button">
+					<a href="ind_projects.php">повеќе</a>
+				</div>
 			</div>
 		</div>
 	</div>
