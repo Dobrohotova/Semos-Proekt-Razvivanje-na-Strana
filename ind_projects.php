@@ -26,6 +26,7 @@ $projects = $query_projects->fetchAll(PDO::FETCH_ASSOC);
 		<div class="img-header">		
 			<img src="media/images/slika.png">
 		</div>
+	<?php include('navigation_graphic.php'); ?>
 		
 	<div class="flaer">	
 		<div class="pro-head">

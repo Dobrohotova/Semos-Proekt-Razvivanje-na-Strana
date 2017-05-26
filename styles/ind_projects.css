@@ -17,9 +17,14 @@ body{
 .img-header img {
 	width: 100%;
 }
+
+.img-header {
+	background-color: #ececec;
+}
+
 .flaer{
 	width: 100%;
-	margin-top: -33px;
+	/*margin-top: -33px;*/
 	background-color: #f5f5f5;
 }
 .pro-head{
