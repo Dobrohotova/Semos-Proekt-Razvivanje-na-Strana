@@ -2,7 +2,7 @@
 
 include('general.php');
 
-$sql_projects = 'select * from ind_projects';
+$sql_projects = "select * from ind_projects where academy = 'Графички дизајн'";
 $query_projects = $db->query($sql_projects);
 $projects = $query_projects->fetchAll(PDO::FETCH_ASSOC);
 
@@ -49,51 +49,25 @@ $projects = $query_projects->fetchAll(PDO::FETCH_ASSOC);
 					<div class="red<?php echo floor($key / 3) + 1; ?>">
 				<?php } ?>	
 					<div class="holder<?php echo floor($key % 3); ?>">
+						<div class="data-image">
+						<div class="hover-div">
+ 								<img src="media/images/icon-hover.png">
+ 								<p class="grapho"><?= $project['class'] ?>"</p>
+ 						</div>
+ 						<br/>
+ 						<p class="project_name"><?= $project['project_name'] ?></br>
+ 							од <?= $project['student'] ?> </p>
+ 						<br/>
+ 						<p class="client_name">Клиент: <?= $project['client'] ?></br>
+ 								Датум: <?= $project['date'] ?></br>
+ 								Вештини: <?= $project['skills'] ?></p>
+ 						</div>
 						<img src="<?= $project['photo'] ?>" class="slika">
 					</div> 
-<!-- 						<div class="data-image">
-							<div class="hover-div">
-								<img src="media/images/icon-hover.png">
-								<p class="grapho">Graphics, Photography</p>
-							</div>
-							</br>
-							<p class="moodboard">Moodboard design </br>
-							од Лара Маринковиќ </p>
-							</br>
-							<p class="samshing">Clients: Smashing Magazine</br>
-								Date: November 15, 2014</br>
-								Skills: Photoshop</p>
-						</div> -->
-
-
-
-<!-- 						<img src="media/images/grafichki3.png" class="slika">
-					</div>
-					
-					<div class="holder2">
-						<img src="media/images/grafichki7.png" class="slika">
-					</div>
-					
-					<div class="holder3">
-						<img src="media/images/grafichki6.png" class="slika">
-					</div> -->
 				<?php if($key % 3 == 2) {?>
 					</div>
 				<?php } ?>	
 			<?php } ?>
-				
-<!-- 				<div class="red2">
-
-					<div class="holder4">
-						<img src="media/images/grafichki8.png" class="slika">
-					</div>
-					<div class="holder5">
-						<img src="media/images/grafichki9.png" class="slika">
-					</div>
-					<div class="holder6">
-						<img src="media/images/grafichki5.png" class="slika">
-					</div> -->
-<!-- 				<div> -->
 			</div>
 		</div>
 	</div>

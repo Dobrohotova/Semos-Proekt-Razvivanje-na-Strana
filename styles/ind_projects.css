@@ -66,21 +66,8 @@ body{
 	clip-path: polygon(50% 4%, 60% 0, 100% 0, 100% 70%, 50% 100%, 0 70%, 0 0, 40% 0);
 }
 .sliki{
-	width: 100%;
+	width: 100%;	
 	background-color: #F5F5F5;
-}
-.red1{
-	padding-top: 95px;
-	margin: 0 auto;
-	width: 1400px;
-	height: 550px;
-}
-.holder1{
-	float: left;
-	/*margin: 0 auto;*/
-	width: 400px;
-	height: 535px;
-	position: relative;
 }
 
 .data-image {
@@ -116,39 +103,49 @@ body{
 	font-weight: 600;
 	float: left;
 }
-.moodboard{
+.project_name{
 	font-size: 30px;
 	font-style: bold;
 }
-.smashing{
+.client_name{
 	font-size: 24px;
 	font-style: bold;
 
 }
-
-.slika1{
-	width: 400px;
+.holder0{
+	float: left;
+	/*margin: 0 auto;*/
+	margin-right: 50px;
+	margin-left: 20px;
+	width: 30%;
 	height: 535px;
+	position: relative;
+}
+.holder1{
+	/*margin: 0 auto;*/
+	margin-right: 50px;
+	width: 30%;
+	height: 535px;
+	float: left;
 }
 .holder2{
-	float: right;
+	float: left;
 	/*margin: 0 auto;*/
-	width: 400px;
-	height: 535px;
-}
-.slika2{
-	width: 400px;
-	height: 535px;
-}
-.holder3{
-	margin: 0 auto;
-	width: 400px;
-	height: 535px;
 
+	width: 30%;
+	height: 535px;
+	position: relative;
 }
-.slika3{
+
+.slika{
 	width: 400px;
 	height: 535px;
+}
+.red1{
+	padding-top: 95px;
+	margin: 0 auto;
+	width: 1400px;
+	height: 550px;
 }
 .red2{
 	margin: 50px auto 0 auto;
@@ -156,39 +153,10 @@ body{
 	height: 550px;
 	/*background-color: blue;*/
 }
-.holder4{
-	float: left;
-	/*margin: 0 auto;*/
-	width: 400px;
-	height: 535px;
-}
-.slika4{
-	width: 400px;
-	height: 535px;
-}
-.holder5{
-	float: right;
-	/*margin: 0 auto;*/
-	width: 400px;
-	height: 535px;
-}
-.slika5{
-	width: 400px;
-	height: 535px;
-}
-.holder6{
-	margin: 0 auto;
-	width: 400px;
-	height: 535px;
 
-}
-.slika6{
-	width: 400px;
-	height: 535px;
-}
 .map{
 	/*overflow: hidden;*/
 	height: 900px;
-	margin-top: -600px;
+	margin-top: 600px;
 	/*opacity: .5;*/
 }
