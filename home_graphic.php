@@ -1,3 +1,11 @@
+<?php 
+include('general.php');
+
+$sql = 'select * from ind_projects limit 2';
+
+$query = $db->query($sql);
+$projects = $query->fetchAll(PDO::FETCH_ASSOC);
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -111,12 +119,14 @@
 				<div class="pozadina2"></div>
 				<h1>Проекти изработени на академијата</h1>
 				<div class="posters-holder">
+					<?php foreach($projects as $key => $project){ ?>
 					<div class="poster">
-						<img src="media/images/ind_projects/grafichki1.jpg">
+						<img src="<?= $project['photo'] ?>">
 					</div>
-					<div class="poster">
+					<?php } ?>
+					<!-- <div class="poster">
 						<img src="media/images/ind_projects/grafichki2.jpg">
-					</div>					
+					</div>	 -->				
 				</div>
 				<div class="button">
 					<a href="ind_projects.php">повеќе</a>
