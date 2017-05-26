@@ -1,6 +1,6 @@
 <?php
 include('general.php');
-$sql = 'select * from students where academy="Графички Дизајн"';
+$sql = 'select * from students where academy="Графички Д"';
 
 $query = $db->query($sql);
 $students = $query->fetchAll(PDO::FETCH_ASSOC);
@@ -11,7 +11,7 @@ $students = $query->fetchAll(PDO::FETCH_ASSOC);
 <html>
 <head>
 	<meta charset="utf-8">
-	<link rel="STYLESHEET" href="styles/student_web.css">
+	<link rel="STYLESHEET" href="styles/student_graphic.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<title>Student Web</title>
 </head>
@@ -40,15 +40,15 @@ $students = $query->fetchAll(PDO::FETCH_ASSOC);
 			<div class= "student-content">
 				<div class= "student-hold">
 				<?php foreach($students as $key=>$student){ 
-					if($key % 3 == 0) { 
-						echo '<div class= "row r'.(floor($key/3)+1).'">';
+					if($key % 4 == 0) { 
+						echo '<div class= "row">';
 					}
-						echo '<div class= "student s'.($key+1).'">';
+						echo '<div class= "student s'.($key % 4 + 1).'">';
 						echo '<img src="'.$student['photo'].'">';
 						echo '<h1>'.$student['first_name'].'<br/>'.$student['last_name'].'</h1>';
 						echo '<div><button class= "kopce">Портфолио</button></div>';
 						echo '</div>';
-					if($key % 3 == 2) {
+					if($key % 4 == 3) {
 						echo '</div>';
 					}
 				} ?>
