@@ -91,6 +91,10 @@ header.smaller {
 						height: 47px;
 					}
 
+						nav ul li a:hover {
+							opacity: .7;
+						}
+
 /*.searches {
 	width: 100px;
 	height: 60px;
