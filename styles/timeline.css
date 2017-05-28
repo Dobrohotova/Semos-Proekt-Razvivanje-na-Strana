@@ -3,7 +3,6 @@
 *::after {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
@@ -11,7 +10,7 @@ body {
   background: #f5f5f5;
   color: #464646;
   overflow-x: hidden;
-  padding-bottom: 50px;
+  /*padding-bottom: 50px;*/
 }
 
 .polly{
@@ -44,7 +43,8 @@ body {
 
 .topImage img {
   width: 100%;
-  margin-bottom: 100px;
+  background-color: #ececec;
+  /*margin-bottom: 100px;*/
 }
 
 h1 {

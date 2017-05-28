@@ -21,7 +21,10 @@ $students = $query->fetchAll(PDO::FETCH_ASSOC);
 		<?php include('header_all.html'); ?>
 	</div>
 		<div class="pictxt">
-			<div class= "pic"><img src="media/images/toppicture.png"></div>
+			<div class= "pic">
+				<img src="media/images/toppicture.png">
+			</div>
+				<?php include('navigation_graphic.php'); ?>
 			<div class="text">
 				<h1 class= "tophead">Студенти</h1>
 				<p class= "description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut mauris leo. Vestibulum ut erat elit. Integer sodales pharetra ullamcorper. Vivamus pulvinar semper magna in luctus. Vivamus volutpat ornare velit sit amet interdum.</p>

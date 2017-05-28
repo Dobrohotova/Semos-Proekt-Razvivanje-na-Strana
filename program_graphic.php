@@ -24,6 +24,7 @@ $classes = $query_classes->fetchAll(PDO::FETCH_ASSOC);
     <div class="topImage">
       <img src="media/images/programa_grafika.png" alt="Графички Дизајн">
     </div>
+    <?php include('navigation_graphic.php'); ?>
     <div class="container">
       <h1>Програма</h1>
       <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse iaculis posuere lorem, venenatis condimentum mi lobortis vel. Morbi vitae ultricies quam, non vestibulum quam. Maecenas ornare metus quis venenatis hendrerit. Pellentesque pharetra, nisl id blandit ultrices, ex ipsum convallis justo, a tristique sem est at risus. Nam sit amet orci ac justo tempor aliquet. Proin et dui nisi. Aenean mattis sodales erat eu rutrum. Nulla at faucibus enim.</p>

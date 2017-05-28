@@ -14,7 +14,7 @@
 		<div class="nav2">
 			<div class="nav2-sodrzhina">
 				<div class="nav2-studenti">
-					<a href="student-graphic.php">
+					<a href="student_graphic.php">
 						<img class="polygon-nav" src="media/images/polygon-nav.png">
 						<img class="icons-nav" src="media/images/icons/studenti.png">
 						<p>Студенти</p>
