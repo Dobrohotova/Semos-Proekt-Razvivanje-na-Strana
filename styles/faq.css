@@ -81,11 +81,7 @@ body {
 	border-left: 5px solid #ffffff;
 	border-right: 5px solid #ffffff;
 }
-.mapa{
-	overflow: hidden;
-	height: 1200px;
-	margin-top: -1200px;
-}
+
 .bolded{
 	font-weight: bold;
 	text-align: left;

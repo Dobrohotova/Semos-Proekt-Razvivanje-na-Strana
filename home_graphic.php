@@ -134,5 +134,6 @@ $projects = $query->fetchAll(PDO::FETCH_ASSOC);
 			</div>
 		</div>
 	</div>
+		<?php include('footer.html'); ?>
 </body>
 </html>
