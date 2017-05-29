@@ -13,7 +13,7 @@ $students = $query->fetchAll(PDO::FETCH_ASSOC);
 	<meta charset="utf-8">
 	<link rel="STYLESHEET" href="styles/student_graphic.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-	<title>Student Web</title>
+	<title>Student Graphic</title>
 </head>
 <body>
 	<div class="container">
@@ -35,24 +35,48 @@ $students = $query->fetchAll(PDO::FETCH_ASSOC);
 					<p style="font-size:24pt;">Генерација</p>
 						<select name="generation">
 							<option value="2017">2017</option>
-							<option value="2017">2018</option>
-							<option value="2017">2019</option>
 						</select>
 				</div>
 			</div>
 			<div class= "student-content">
 				<div class= "student-hold">
 				<?php foreach($students as $key=>$student){ 
-					if($key % 4 == 0) { 
-						echo '<div class= "row">';
-					}
-						echo '<div class= "student s'.($key % 4 + 1).'">';
-						echo '<img src="'.$student['photo'].'">';
-						echo '<h1>'.$student['first_name'].'<br/>'.$student['last_name'].'</h1>';
-						echo '<div><button class= "kopce">Портфолио</button></div>';
-						echo '</div>';
-					if($key % 4 == 3) {
-						echo '</div>';
+					if($key < 8){
+						if($key % 4 == 0) { 
+							echo '<div class= "row">';
+						}
+							echo '<div class= "student s'.($key + 1).'">';
+							echo '<img src="'.$student['photo'].'">';
+							echo '<h1>'.$student['first_name'].'<br/>'.$student['last_name'].'</h1>';
+							echo '<div><button class= "kopce">Портфолио</button></div>';
+							echo '</div>';
+						if($key % 4 == 3) {
+							echo '</div>';
+						}
+					}else if($key < 11){
+						if($key == 8) { 
+							echo '<div class= "row">';
+						}
+							echo '<div class= "student s'.($key + 1).'">';
+							echo '<img src="'.$student['photo'].'">';
+							echo '<h1>'.$student['first_name'].'<br/>'.$student['last_name'].'</h1>';
+							echo '<div><button class= "kopce">Портфолио</button></div>';
+							echo '</div>';
+						if($key == 10) {
+							echo '</div>';
+						}
+					}else if($key < 13){
+						if($key == 11) { 
+							echo '<div class= "row">';
+						}
+							echo '<div class= "student s'.($key + 1).'">';
+							echo '<img src="'.$student['photo'].'">';
+							echo '<h1>'.$student['first_name'].'<br/>'.$student['last_name'].'</h1>';
+							echo '<div><button class= "kopce">Портфолио</button></div>';
+							echo '</div>';
+						if($key == 12) {
+							echo '</div>';
+						}
 					}
 				} ?>
 				</div>

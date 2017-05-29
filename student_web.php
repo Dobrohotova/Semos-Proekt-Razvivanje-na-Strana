@@ -35,8 +35,6 @@ $students = $query->fetchAll(PDO::FETCH_ASSOC);
 					<p style="font-size:24pt;">Генерација</p>
 						<select name="generation">
 							<option value="2017">2017</option>
-							<option value="2017">2018</option>
-							<option value="2017">2019</option>
 						</select>
 				</div>
 			</div>
@@ -44,7 +42,7 @@ $students = $query->fetchAll(PDO::FETCH_ASSOC);
 				<div class= "student-hold">
 				<?php foreach($students as $key=>$student){ 
 					if($key % 3 == 0) { 
-						echo '<div class= "row r'.(floor($key/3)+1).'">';
+						echo '<div class= "row">';
 					}
 						echo '<div class= "student s'.($key+1).'">';
 						echo '<img src="'.$student['photo'].'">';
