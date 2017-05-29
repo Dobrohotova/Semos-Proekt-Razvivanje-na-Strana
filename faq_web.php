@@ -11,6 +11,7 @@
 			<div class="image-header">
 				<img src="media/images/faq-veb.png">
 			</div>
+			<?php include('navigation_web.php'); ?>
 			<div class="faq">
 				<div class="prasanja">
 					<h1 class="cpp">Често Поставувани Прашања

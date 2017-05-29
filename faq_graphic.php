@@ -14,8 +14,8 @@
 			<?php include('navigation_graphic.php'); ?>
 			<div class="faq">
 				<div class="prasanja">
-					<h1 class="cpp">Често Поставувани Прашања
-						<p>(За Графика)</p>
+					<h1 class="cpp">Често Поставувани Прашања>
+						<!-- <p>(За Графика)</p> -->
 					</h1>
 
 					<h2>KОНКУРС ЗА АКАДЕМСКАТА ГОДИНА 2017/18</h2>
