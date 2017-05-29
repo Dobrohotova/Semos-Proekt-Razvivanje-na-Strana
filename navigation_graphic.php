@@ -42,7 +42,7 @@
 					</a>
 				</div>
 				<div class="nav2-faq">
-					<a href="faq.php">
+					<a href="faq_graphic.php">
 						<img class="polygon-nav" src="media/images/polygon-nav.png">
 						<img class="icons-nav" src="media/images/icons/faq.png">
 						<p>FAQ</p>
