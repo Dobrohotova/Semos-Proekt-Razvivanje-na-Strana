@@ -4,7 +4,7 @@
 
 </head>
 <body>
-
+	<link rel="stylesheet" type="text/css" href="styles/about.css">
 		<?php include 'header_all.html'; ?>
 	<div>
 		<img src="media/images/about/head_image.png">
@@ -61,11 +61,7 @@
 		
 	</div>
 
-	<div class="delovni_sorabotnici">
-		<h1>Деловни Соработници</h1>
-		<img src="media/images/about/delovni_sorabotnici.png" >
-
-	</div>
+	<?php include 'collaborators.php'; ?>
 
 
 </body>
